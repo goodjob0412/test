@@ -1,0 +1,353 @@
+@import url("https://use.typekit.net/zst3aiv.css");
+
+body {
+	margin: 0;
+	background-color: #fdfbf4;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+@font-face {
+	font-family: 'HallymMjo-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+.wrap {
+	min-width: 1200px;
+}
+/* 메인 컨테이너 */
+main {
+	width: calc(100% - 300px);
+	margin: 0 auto;
+	position: relative;
+	padding-top: 150px;
+}
+.top_main {
+	/* width: calc(100vw - 300px);
+	height: calc((100vw - 300px) / 2); */
+
+	width: 100%;
+	height: calc((100vw - 317px) / 2);
+	min-height: 449px;
+	background-color: #fdfbf4;
+	
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.container {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+}
+.con_box {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.con_box a {
+	overflow: hidden;
+}
+.con_box img {
+	width: 100%;
+	overflow: hidden;
+}
+.top_L > a:nth-child(1) {
+	width: 100%;
+	height: calc(100% / 3 * 1);
+	display: block;
+	position: relative;
+}
+.top_L > a:nth-child(1) > h1 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 46px;
+}
+.top_L > a:nth-child(2) {
+	width: 100%;
+	height: calc(100% / 3 * 2);
+	display: block;
+}
+.top_R > a:nth-child(1) {
+	width: calc(100% / 3 * 2);
+	height: calc(100% / 3 * 2);
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.top_R > a:nth-child(1) > p {
+	/* font-family: 'HallymMjo-Regular';
+	font-size: 0.8em; */
+	position: absolute;
+}
+.top_R > a:nth-child(1) > p:nth-child(1) {
+	line-height: 200%;
+	bottom: 50px;
+	left: 10px;
+}
+.top_R > a:nth-child(1) > p:nth-child(2) {
+	font-weight: 600;
+	right: 10px;
+  bottom: 18px;
+}
+
+.top_R > a:nth-child(2) {
+	width: calc(100% / 3 * 1);
+	height: calc(100% / 3 * 2);
+	display: block;
+}
+.top_R > a:nth-child(3) {
+	width: 100%;
+	height: calc(100% / 3);
+	display: block;
+}
+
+.top_active {
+	filter: blur(4px);
+	transition: all 0.3s linear;
+}
+
+/* 메인 탑 그리드 */
+.container_grid {
+	width: 100%;
+	height: 100%; 
+	display: flex;
+	flex-wrap: wrap;
+	pointer-events: none;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.grid {
+	width: calc(100% / 6);
+	height: calc(100% / 3);
+	box-shadow: 0 0 0 1px #fff;
+}
+
+/* 메인 중간 */
+.section {
+	/* width: calc(100vw - 300px); */
+	width: 100%;
+	margin: 0 auto;
+}
+.sec {
+	display: flex;
+	justify-content: space-between;
+
+	transform: translateY(100px);
+	transition: all 0.7s;
+	opacity: 0;
+}
+.sec_active {
+	transform: translateY(0);
+	opacity: 1;
+}
+.sec_text {
+	flex-grow: 1;
+	position: relative;
+}
+.section p {
+	font-family: 'HallymMjo-Regular';
+	font-size: 16px;
+
+	margin: 0;
+	line-height: 34px;
+	white-space: nowrap;
+}
+
+/* brand_story */
+.sec_brand_story {
+	width: 100%;
+	margin-top: 15vh;
+}
+.sec_brand_story > a {
+	width: 58%;
+	overflow: hidden;
+}
+.sec_brand_story > a > img {
+	width: 100%;
+	transform: translateX(-24px);
+}
+.brand_story_text > p {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 5vh;
+}
+
+/* journal_1 */
+.sec_journal_1 {
+	width: 100%;
+	margin-top: 15vh;
+	text-align: right;
+}
+.journal_1_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.sec_journal_1 > a {
+	width: 45%;
+	overflow: hidden;
+	padding-right: 10vh;
+}
+.sec_journal_1 > a > img {
+	width: 100%;
+}
+
+/* journal_2 */
+.sec_journal_2 {
+	width: 100%;
+	margin-top: 3vh;
+  text-align: right;
+}
+.journal_2_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.sec_journal_2 > a {
+  width: 45%;
+  overflow: hidden;
+}
+.sec_journal_2 > a > img {
+	width: 100%;
+}
+
+/* curation_1 */
+.curation_1 {
+	width: 100%;
+	margin-top: 20vh;
+}
+.curation_1 > a {
+	width: 44%;
+	overflow: hidden;
+}
+.curation_1 > a > img {
+	width: 100%;
+}
+.curation_1_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* curation_2 */
+.curation_2 {
+	width: 100%;
+	margin-top: 15vh;
+}
+.curation_2 > a {
+	width: 40%;
+	overflow: hidden;
+}
+.curation_2 > a > img {
+	width: 100%;
+}
+.curation_2_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* fragrance */
+.fragrance {
+	width: 100%;
+	margin-top: 10vh;
+}
+.fragrance > a {
+	width: 30%;
+	overflow: hidden;
+}
+.fragrance > a > img {
+	width: 100%;
+}
+.fragrance_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* body */
+.body {
+	width: 100%;
+	margin-top: 15vh;
+}
+.body > a {
+	width: 40%;
+	overflow: hidden;
+}
+.body > a > img {
+	width: 100%;
+}
+.body_text > p {
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* rest */
+.rest {
+	margin: 18vh 0;
+	text-align: center;
+
+	transform: translateY(100px);
+	transition: all 0.7s;
+	opacity: 0;
+}
+.rest > a {
+	width: 40%;
+	display: inline-block;
+}
+.rest > a > img {
+	width: 100%;
+}
+.rest_2 {
+	transform: translateY(118px);
+}
+.sec_active_rest {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+

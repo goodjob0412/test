@@ -1,0 +1,172 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+p {
+    margin: 0;
+}
+
+/* /////////////////////////////////// */
+.journal_top {
+    text-align: center;
+    margin: 60px 0;
+}
+.journal_top > h2 {
+    margin: 5px;
+}
+.journal_menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 18px;
+    color: gray;
+   
+}
+
+/* brand Story */
+
+.serial_title {
+    text-align: center;
+}
+.serial_title > h1 {
+    margin: 50px 0 0px;
+}
+
+.bs_img {
+    width: 90%;
+    margin: 40px auto;
+}
+.bs_img > img {
+    width: 100%;
+}
+
+.text_area {
+    line-height: 32px;
+    font-size: 14px;
+}
+.text_area > p {
+    padding-bottom: 30px;
+}
+
+
+/* serial_list */
+
+.serial_list {
+    width: 100%;
+    margin: 100px auto;
+    overflow-x: scroll;
+    transform: translateY(25px);
+}
+
+.bs_mg {
+    margin: 0 20px;
+}
+.bs_list > ul {
+    width: 380%;
+}
+.bs_list_item {
+    float: left;
+    min-width: 300px;
+    max-width: 400px;
+    width: calc(( 100% - ( 20px * 2) ) / 3);
+    overflow: hidden;
+}
+
+.bs_img_box {
+    width: 100%;
+    height: 250px;
+}
+.bs_list_img3 {
+    background: url(../journal/brand_story3.jpg) no-repeat center /cover;
+}
+.bs_list_img2 {
+    background: url(../journal/brand_story2.jpg) no-repeat center /cover;
+}
+.bs_list_img1 {
+    background: url(../journal/brand_story1.jpg) no-repeat center /cover;
+}
+
+.bs_list_item h4 {
+    padding: 10px 0 5px;
+}
+.bs_list_item p {
+    font-size: 12px;
+}
+
+
+/* serial_list */
+.se_list_item { 
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.se_img_box {
+    width: 100%;
+    height: 350px;
+}
+.se_mg {
+    margin-right: 20px;
+}
+
+.se_EP_img2 {
+    background: url(../journal/EP.02.jpeg) no-repeat center /cover;
+}
+.se_EP_img1 {
+    background: url(../journal/EP.01.jpg) no-repeat center /cover;
+}
+.se_list_img2 {
+    background: url(../journal/serial2.jpg) no-repeat center /cover;
+}
+.se_list_img1 {
+    background: url(../journal/serial1.png) no-repeat center /cover;
+}
+.se_list_item h4 {
+    padding: 10px 0 5px;
+}
+.se_list_item p {
+    font-size: 12px;
+}
+
+
+
+
+
+/* 
+.op_0 {
+    opacity: 0;
+    
+}
+.sec_active {
+    transition: all 1s;
+    opacity: 1;  
+}
+.op_1 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.font_black {
+    color: black;
+}
+
+
+

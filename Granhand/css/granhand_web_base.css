@@ -1,0 +1,144 @@
+@import url("https://use.typekit.net/zst3aiv.css");
+
+body {
+	margin: 0;
+	background-color: #fdfbf4;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+@font-face {
+	font-family: 'HallymMjo-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* 헤더 */
+
+header {
+	width: 100%;
+	min-width: 1200px;
+	height: 150px;
+	background-color: #fdfbf4;
+	/* position: relative; */
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	transition: all 0.2s;
+}
+.header_active {
+	height: 70px;
+}
+.h_contanier {
+		width: calc(100% - 300px);
+		height: 100%;
+    margin: 0 auto;
+		position: relative;
+}
+.logo {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: flex;
+	align-items: center;
+}
+.logo > a > img {
+	width: 120px;
+	height: 16px;
+}
+.category {
+	font-size: 14px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+
+	position: absolute;
+	/* right: 140px; */
+	right: 0;
+}
+
+/* 푸터 */
+footer {
+	width: calc(100% - 200px);
+	height: 130px;
+	padding-top: 30px;
+
+	margin: 0 auto;
+	font-family: 'HallymMjo-Regular';
+	font-size: 14px;
+	color: grey;
+	line-height: 34px;
+	border-top: 2px gray solid;
+}
+.footer_info_1 > p {
+	margin: 0;
+}
+
+.footer_info_2 {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* 백그라운드 이미지 */
+/* .background_img {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(0);
+	width: 30%;
+	z-index: -1;
+	opacity: 0.2;
+}
+.background_img img {
+	width: 100%;
+} */
+
+.bg_container {
+	width: 100%;
+	min-width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	position: fixed;
+	left: 0;
+	top: 0; 
+	z-index: -1;
+}
+.bg_box {
+	width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%); 
+}
+.background_img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(0);
+	width: 30%;
+	
+	opacity: 0.2;
+	filter: blur(4px);
+}
+.background_img img {
+	width: 100%;
+}

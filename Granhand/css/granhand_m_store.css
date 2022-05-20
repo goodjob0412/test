@@ -1,0 +1,193 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+p {
+	margin: 0;
+	font-family: 'HallymMjo-Regular';
+	font-size: 14px;
+	font-weight: 900;
+}
+h2 {
+    /* margin: 0; */
+ 	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.title_font {
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+.store_menu {
+	display: flex;
+	gap: 20px;
+	color: grey;
+	font-size: 18px;
+	padding: 10px 0;
+    overflow: scroll;
+}
+
+.namsan_str > p {
+	font-size: 14px;
+	padding: 20px 0;	
+}
+
+/* 남산 */
+
+.store_box {
+ 	width: 100%;
+}
+.namsan_str {
+	width: 100%;
+	
+	background-color: #fdfbf4;
+	padding-top: 50px;
+}
+
+.ns_st {
+ 	width: 100%;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.ns_st img {
+	width: 100%;
+}
+
+
+
+/* 마포 */
+
+.store_box {
+  	width: 100%;
+}
+.mapo_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.mapo_str > p {
+	padding: 20px 0;
+}
+
+.mp_st {
+	width: 100%;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.mp_st img {
+	width: 100%;
+}
+
+
+/* 서촌 */
+
+.store_box {
+  width: 100%;
+}
+.seochon_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.seochon_str > p {
+	padding: 20px 0;
+}
+
+.sc_st {
+	width: 100%;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.sc_st img {
+	width: 100%;
+}
+
+
+/* 소격 */
+
+.store_box {
+  width: 100%;
+}
+.sogyeok_str {
+	width: 100%;
+	
+	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.sogyeok_str > p {
+	padding: 20px 0;
+}
+
+.sg_st {
+	width: 100%;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.sg_st img {
+	width: 100%;
+}
+
+
+
+/* 북촌 */
+
+.store_box {
+  width: 100%;
+}
+.bukchon_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding: 140px 0 100px;
+}
+.bukchon_str > p {
+	padding: 20px 0;
+}
+
+.bc_st {
+	width: 100%;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.bc_st img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec_active {
+	transition: all 1s;
+	opacity: 1;  
+}
+
+
+.font_black {
+	color: #000;
+}

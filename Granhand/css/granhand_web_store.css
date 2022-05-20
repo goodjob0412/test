@@ -1,0 +1,247 @@
+.wrap {
+	min-width: 1200px;
+}
+main {
+	width: calc(100% - 300px);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+p {
+	margin: 0;
+	font-family: 'HallymMjo-Regular';
+	font-size: 14px;
+	font-weight: 900;
+}
+h2 {
+    /* margin: 0; */
+ 	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.title_font {
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+.store_menu {
+	display: flex;
+	gap: 20px;
+	color: grey;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.namsan_str > p {
+	font-size: 14px;
+	padding: 20px 0;	
+}
+
+/* 남산 */
+
+.store_box {
+ 	width: 100%;
+}
+.namsan_str {
+	width: 100%;
+	
+	background-color: #fdfbf4;
+	padding-top: 50px;
+}
+.ns_container {
+	overflow: hidden;
+}
+.ns_L_con {
+	width: calc(50% - 10px);
+	float: left;
+}
+.ns_R_con {
+	width: calc(50% - 10px);
+	float: right;
+}
+.ns_st {
+ 	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.ns_st img {
+	width: 100%;
+}
+
+
+
+/* 마포 */
+
+.store_box {
+  	width: 100%;
+}
+.mapo_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.mapo_str > p {
+	padding: 20px 0;
+}
+.mp_container {
+	overflow: hidden;
+}
+.mp_L_con {
+	width: calc(50% - 10px);
+	float: left;
+}
+.mp_R_con {
+	width: calc(50% - 10px);
+	float: right;
+}
+.mp_st {
+	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.mp_st img {
+	width: 100%;
+}
+
+
+/* 서촌 */
+
+.store_box {
+  width: 100%;
+}
+.seochon_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.seochon_str > p {
+	padding: 20px 0;
+}
+.sc_container {
+	overflow: hidden;
+}
+.sc_L_con {
+	width: calc(50% - 10px);
+	float: left;
+}
+.sc_R_con {
+	width: calc(50% - 10px);
+	float: right;
+}
+.sc_st {
+	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.sc_st img {
+	width: 100%;
+}
+
+
+/* 소격 */
+
+.store_box {
+  width: 100%;
+}
+.sogyeok_str {
+	width: 100%;
+	
+	background-color: #fdfbf4;
+	padding-top: 140px;
+}
+.sogyeok_str > p {
+	padding: 20px 0;
+}
+.sg_container {
+	overflow: hidden;
+}
+.sg_L_con {
+	width: calc(50% - 10px);
+	float: left;
+}
+.sg_R_con {
+	width: calc(50% - 10px);
+	float: right;
+}
+.sg_st {
+	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.sg_st img {
+	width: 100%;
+}
+
+
+
+/* 북촌 */
+
+.store_box {
+  width: 100%;
+}
+.bukchon_str {
+	width: 100%;
+	
+ 	background-color: #fdfbf4;
+	padding: 140px 0 100px;
+}
+.bukchon_str > p {
+	padding: 20px 0;
+}
+.bc_container {
+	overflow: hidden;
+}
+.bc_L_con {
+	width: calc(50% - 10px);
+	float: left;
+}
+.bc_R_con {
+	width: calc(50% - 10px);
+	float: right;
+}
+.bc_st {
+	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.bc_st img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec_active {
+	transition: all 1s;
+	opacity: 1;  
+}
+
+
+.font_black {
+	color: #000;
+}

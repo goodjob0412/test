@@ -1,0 +1,189 @@
+
+
+p {
+    font-weight: 700;
+}
+
+.sec {
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    
+}
+/* /////브랜드 스토리////////////////////////////// */
+.bs_img {
+    width: 100%;
+    height: 70vw;
+    min-height: 500px;
+
+    background: url(../main/brand_story_n.jpg)no-repeat center /cover ;
+    background-position-y: 1%;
+}
+.brand_story_sec p {
+    font-family: 'HallymMjo-Regular';
+    text-align: center;
+    padding: 5px 0 0;
+}
+
+/* ////저널///////////////////////////////////////// */
+
+.journal_sec {
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+.jn_title {
+    padding-left: 20px;
+}
+.jn_1_box {
+    width: 85%;
+    float: right;
+    padding-bottom: 10px;
+    text-align: -webkit-right;
+}
+.jn_img_1 {
+    width: 100%;
+    /* height: 250px; */
+    height: 48vw;
+    min-height: 250px;
+
+    background: url(../main/EP_01_2.jpeg)no-repeat center /cover ;
+    /* text-align: -webkit-right; */
+}
+.jn_1_box > p {
+    text-align: left;
+    margin: 5px 0 20px;
+    font-family: 'HallymMjo-Regular';
+    font-weight: 400;
+}
+.jn_2_box {
+    width: 85%;
+    float: left;
+    padding-bottom: 10px;
+}
+.jn_img_2 {
+    width: 100%;
+    /* height: 250px; */
+    height: 48vw;
+    min-height: 250px;
+   
+    background: url(../main/03_sillhouette_2.png)no-repeat center /cover ;
+}
+.jn_2_box > p {
+    text-align: right;
+    margin: 5px 0 20px;
+    font-family: 'HallymMjo-Regular';
+    font-weight: 400;
+}
+
+/* //////Curation//////////////////////////////////// */
+
+.cr_img {
+    /* width: 100%;
+    height: 500px;*/
+ 
+    width: 100%;
+    height: 104vw;
+    min-height: 500px;
+    max-height: 800px;
+    background: url(../main/curation_1.jpg)no-repeat center /cover;
+    /* background-position-y: 1%;*/
+}
+.curation_sec p {
+    font-family: 'HallymMjo-Regular';
+    text-align: center;
+    padding: 5px 0 0;
+}
+
+/* //////Fragrance//////////////////////////////////// */
+
+.fr_img {
+    /* width: 100%;
+    height: 500px; */
+    width: 100%;
+    height: 104vw;
+    min-height: 500px;
+    max-height: 800px;
+
+    background: url(../main/fragrance.jpg)no-repeat center /cover ;
+    /* background-position-y: 1%; */
+}
+.fragrance_sec p {
+    font-family: 'HallymMjo-Regular';
+    text-align: center;
+    padding: 5px 0 0;
+}
+
+/* //////store//////////////////////////////////// */
+.store_sec {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.store_sec h1 {
+    padding-left: 20px;
+}
+
+.store_sec p {
+    font-family: 'HallymMjo-Regular';
+    text-align: center;
+
+    padding: 10px 0 20px;
+}
+
+.st_ns {
+    width: 100%;
+    height: 250px;
+    background: url(../namsan/namsan_2.jpg)no-repeat center /cover ;
+    background-position-y: 80%;
+}
+
+.st_mp {
+    /* width: 100%;
+    height: 250px; */
+    width: 100%;
+    height: 35vw;
+    min-height: 250px;
+    background: url(../mapo/mapo_7.jpg)no-repeat center /cover ;
+}
+
+.st_sc {
+    /* width: 100%;
+    height: 250px; */
+    width: 100%;
+    height: 35vw;
+    min-height: 250px;
+    background: url(../seochon/seochon_5.jpg)no-repeat center /cover ;
+}
+.st_sg {
+    /* width: 100%;
+    height: 250px; */
+    width: 100%;
+    height: 35vw;
+    min-height: 250px;
+    background: url(../sogyeok/sogyeok_5.jpg)no-repeat center /cover ;
+    
+}
+.st_bc {
+    /* width: 100%;
+    height: 250px; */
+    width: 100%;
+    height: 35vw;
+    min-height: 250px;
+    background: url(../bukchon/bukchon_6.jpg)no-repeat center /cover ;
+    
+}
+
+/* //////text//////////////////////////////////// */
+
+.text_sec p {
+    font-family: 'HallymMjo-Regular';
+    text-align: center;
+
+    padding: 50px 0 150px;
+}
+
+
+
+footer p {
+    font-weight: 400;
+}
