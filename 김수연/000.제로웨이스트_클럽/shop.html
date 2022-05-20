@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제로웨이스트 클럽</title>
+
+    <script>
+        if(navigator.maxTouchPoints >= 1) {
+            // 태블릿 & 모바일
+            location.replace('../000.제로웨이스트_클럽_m/m_shop.html')
+        }
+
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="js/shop_item_list.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/shop.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="./index.html">로고</a>
+            </div>
+            
+            <!-- 네비 -->
+            <div class="nav">
+                <div class="nav_li">
+                    <a href="./shop.html?cate_no=999">장보기</a>
+                    <div class="sub_menu_box">
+                        <div class="nav_sub_menu">
+                            <a href="./shop.html?cate_no=0">욕실
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="./shop.html?cate_no=1">부엌
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="./shop.html?cate_no=2">일상
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="./shop.html?cate_no=3">여성용품
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="./shop.html?cate_no=4">식품
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_li">
+                    <a href="#">ZWC소개</a>
+                    <div class="sub_menu_box">
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            ZEROWASTE?
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            ZWC는!
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_li">
+                    <a href="#">GRWZ</a>
+                </div>
+                <div class="nav_li">
+                    <a href="#">아나바다</a>
+                    <div class="sub_menu_box">
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            아껴쓰고
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            나눠쓰고
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            바꿔쓰고
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                            다시쓰고
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_li">
+                    <a href="#">분리수거</a>
+                    <div class="sub_menu_box">
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                                분리배출 표시로 보기
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                                일상속 쓰레기로 보기
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                        <div class="nav_sub_menu">
+                            <a href="#">
+                                버리는 방법
+                                <div class="link_arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login"></div>
+        </header>
+        <div class="shop_menu">
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=999">전체 상품보기</a>
+            </div>
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=0">욕실</a>
+            </div>
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=1">주방</a>
+            </div>
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=2">일상</a>
+            </div>
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=3">여성용품</a>
+            </div>
+            <div class="shop_menu_li">
+                <a href="./shop.html?cate_no=4">음식</a>
+            </div>
+        </div>
+        <main class="item_area header_active">
+            <!-- <div class="item_box">
+                <a href="#">
+                    <div class="react_icon_box">
+                        <span class="react_icon i_like"></span>
+                        <span class="reac_qty">23</span>
+                        <span class="react_icon i_reply"></span>
+                        <span class="reac_qty">15</span>
+                        <span class="react_icon i_cart"></span>
+                        <span class="reac_qty">16</span>
+                    </div>
+                    <div class="img_box">
+                        <img src="img/shop_page/일상/메모패드1.jpg" alt="메모패드">
+                    </div>
+                    <div class="color_otp_box">
+                        <div class="color_opt"></div>
+                    </div>
+                    <div class="item_name">비목 메모패드</div>
+                    <div class="item_price">2,000원</div>
+                    <div class="i_inform_box">
+                        <div class="inform_icon i_best">BEST</div>
+                        <div class="inform_icon i_new">NEW</div>
+                        <div class="inform_icon i_sale">SALE</div>
+                    </div>
+                </a>
+            </div> -->
+        </main>
+        <footer class="footer"></footer>
+
+    </div>
+</body>
+</html>

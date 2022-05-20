@@ -1,0 +1,87 @@
+/* ///////////////////////////푸터 footer */
+.footer{
+  width: 100%;
+  background-color: #191f28;
+}
+.footer_container{
+  padding-top: 50px;
+  background-color: #191f28;
+  /* margin: 0; */
+}
+.footer_flex_box{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 199px;
+  padding: 0 65px 50px 65px;
+}
+.footer_flex_box > ul {
+  /* width: 170px; */
+  font-size: 15px;
+  line-height: 30px;
+  padding-bottom: 0 0 50px;
+  
+}
+ft_title{
+  width: 100%;
+  color: #8b95a1;
+  padding-bottom: 5px;
+}
+.footer_flex_box > ul > li {
+  color: #6b7684;
+  width: 170px;
+}
+.footer_flex_box a:hover {
+  text-decoration: underline;
+}
+.address{
+  margin: 0 199px;
+  padding: 0 65px 50px 65px;
+  color: #8b95a1;
+}
+.address > h3 {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+.address > p {
+  font-size: 14px;
+}
+.address > p > a{
+  color: #6b7684;
+  font-size: 13px;
+}
+.address > p > a:hover{
+  text-decoration: underline;
+}
+.footer_item{
+  padding: 24px 0 30px;
+  display: flex;
+}
+.footer_item > li {
+  padding-right: 25px;
+  font-size: 12px;
+}
+.strong{
+  color: #8b95a1;
+  font-weight: 600;
+}
+.footer_item > li > a:hover {
+  text-decoration: underline;
+}
+.icon{
+  display: flex;
+}
+.icon > li {
+  margin-right: 10px;
+}
+.icon > li > a {
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.2s
+}
+.icon > li > a:hover{
+  opacity: 1;
+}

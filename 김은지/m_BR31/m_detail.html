@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="./js/load_list.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/detail.js"></script>
+
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <script src="js/swiper.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          /* background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width:100%;
+          height: 165px;
+        }
+
+        .swiper-wrapper {
+            flex-direction: row;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          /* background: #fff; */
+          /* border-right: 1px solid; */
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+          background: none;
+        }
+
+        .swiper-pagination {
+            bottom: 25px !important;
+        }
+      </style>
+<!-- /////////////////////////////////////////////////////////////////////////// -->
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="h_top contentsarea">
+                <div class="ham_btn_wrap">
+                    <img src="./m_img/btn_menu.png" alt="btn_menu">
+                </div>
+                
+                <div class="logo">
+                    <a href="./m_index.html">logo</a>
+                </div>
+                <ul class="login_ul">
+                    <li class="login login1"><a href="#">LOGIN</a></li>
+                    <li class="login login1 login1_2"><a href="#">JOIN</a></li>
+                    <li class="login login2"><a href="#">고객센터</a></li>
+                    <li class="login login2"><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="m_nav">
+                <ul class="m_nav_top">
+                    <li><a class="m_nav_top_a" href="#">LOGIN</a></li>
+                    <li><a class="m_nav_top_a" href="#">JOIN</a></li>
+                    <li class="nav_search">
+                        <a href="#"><img class="nav_btn_search" src="./m_img/btn_search.png" alt="#"></a>
+                    </li>
+                    <li class="nav_close">
+                        <img class="nav_btn_close" src="./m_img/btn_pop_close.png" alt="btn_pop_close">
+                    </li>
+                </ul>
+                <ul class="m_nav_mid">
+                    <li>
+                        <a href="#">FLAVOR OF THE MONTH</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_0">
+                                <li><a href="#">피카피카 피카츄</a></li>
+                                <li>
+                                    <a href="#"><img class="nav_img" src="./img/img_monthly_fom_220429.png" alt="img_monthly_fom_220429"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">MENU</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_1">
+                                <li><a href="m_product.html?cate_no=1">아이스크림</a></li>
+                                <li><a href="m_product.html?cate_no=2">아이스크림 케이크</a></li>
+                                <li><a href="m_product.html?cate_no=3">음료</a></li>
+                                <li><a href="m_product.html?cate_no=4">커피</a></li>
+                                <li><a href="m_product.html?cate_no=5">디저트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_2">
+                                <li><a href="#">진행중인 이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_3">
+                                <li><a href="#">매창찾기</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">단체주문</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_4">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">점포개설문의</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">영양성분 및 알레르기</a>
+                        <div class="nav_inside">
+                            <ul class="nav_contents nav_contents_5">
+                                <li><a href="#">아이스크림</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">음료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="m_nav_bot">
+                    <li>
+                        <a href="#"><img class="nav_sns_icon" src="./m_img/btn_instagram.png" alt="sns_icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="nav_sns_icon" src="./m_img/btn_facebook.png" alt="sns_icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="nav_sns_icon" src="./m_img/btn_twitter.png" alt="sns_icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="nav_sns_icon" src="./m_img/btn_blog.png" alt="sns_icon"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m_nav_back"></div>
+
+            <div class="gnb">
+                <ul class="gnb_ul">
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">FLAVOR OF THE MONTH</a>
+                        <ul class="gnb_contents gnb_contents_0">
+                            <li><a href="#">피카피카 피카츄</a></li>
+                            <li>
+                                <a href="#"><img class="gnb_img" src="./img/img_monthly_fom_220429.png" alt="img_monthly_fom_220429"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">MENU</a>
+                        <ul class="gnb_contents gnb_contents_1">
+                            <li><a href="m_product.html?cate_no=1">아이스크림</a></li>
+                            <li><a href="m_product.html?cate_no=2">아이스크림 케이크</a></li>
+                            <li><a href="m_product.html?cate_no=3">음료</a></li>
+                            <li><a href="m_product.html?cate_no=4">커피</a></li>
+                            <li><a href="m_product.html?cate_no=5">디저트</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">EVENT</a>
+                        <ul class="gnb_contents gnb_contents_2">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">STORE</a>
+                        <ul class="gnb_contents gnb_contents_3">
+                            <li><a href="#">매창찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">ABOUT</a>
+                        <ul class="gnb_contents gnb_contents_4">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_li">
+                        <a href="#" class="gnb_title">영양성분 및 알레르기</a>
+                        <ul class="gnb_contents gnb_contents_5">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="gnb_panbox">
+                    <div class="gnb_pan gnb_pan0"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sec">
+                <div class="contentsarea">
+                    <div class="detail">
+                        <div class="detailbox item_img_box">
+                            <img class="spoon" src="./img/icon_title_top.png" alt="spoon">
+                            <h2 class="item_title"></h2>
+                            <div class="item_desc">
+                                <p>밀크 초콜릿, 다크 초콜릿, 화이트 무스 세 가지 아이스크림에 달콤 바삭한 초코볼이 더해진 아이스크림</p>
+                            </div>
+                            <!-- <img src="./img/item/best/1.png" alt=""> -->
+                            <img class="icecream_cone" src="./img/img_con.png" alt="icecream_corn">
+                        </div>
+                        <div class="detailbox_wrap">
+                            <div class="detailbox item_buy_box">
+                                
+                                <div class="item_buy_box_title">원하는 사이즈를 골라주세요!
+                                    <img class="icon_spoon icon_spoon_l" src="./img/icon_title_1.png" alt="#">
+                                    <img class="icon_spoon icon_spoon_r" src="./img/icon_title_2.png" alt="#">
+                                </div>
+                                
+                                <div class="buy_opt buy_opt_l">
+                                    <h3>CUP & CONE</h3>
+                                    <div class="size_box">
+                                        <div class="size size_l cone1" id="c1">
+                                            <!-- <img class="size_img" src="./img/ico_c1.gif" alt="ico_c1"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">싱글레귤러</div>
+                                                <p>한가지 맛을 센스있게<br>
+                                                    즐길수 있는 사이즈<br>
+                                                    (용기무게 제외 중량 115g)</p>
+                                                <p><span class="size_price">3500</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_l cone2" id="c2">
+                                            <!-- <img class="size_img" value="싱글킹" src="./img/ico_c2.gif" alt="ico_c2"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">싱글킹</div>
+                                                <p>좋아하는 맛 한가지만 듬뿍<br>
+                                                    맛볼 수 있는 사이즈<br> (중량 145g)</p>
+                                                <p><span class="size_price">4300</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_l cone3" id="c3">
+                                            <!-- <img class="size_img" src="./img/ico_c3.gif" alt="ico_c3"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">더블주니어</div>
+                                                <p>두가지 맛을 조금씩 한번에<br>
+                                                    즐기는 사이즈 (중량 150g)</p>
+                                                <p><span class="size_price">4700</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_l cone4" id="c4">
+                                            <!-- <img class="size_img" src="./img/ico_c4.gif" alt="ico_c4"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">더블레귤러</div>
+                                                <p>아이스크림 매니아를 위한<br>
+                                                    진정한 더블 사이즈<br> (중량 230g)</p>
+                                                <p><span class="size_price">6700</span>원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="buy_opt buy_opt_r">
+                                    <h3>HAND PACK</h3>
+                                    <div class="size_box">
+                                        <div class="size size_r cup1" id="c5">
+                                            <!-- <img class="size_img" src="./img/ico_p1.gif" alt="ico_p1"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">파인트</div>
+                                                <p>3가지 맛을 골라먹는 재미가<br>
+                                                    있는 사이즈 (중량 320g)</p>
+                                                <p><span class="size_price">8900</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_r cup2" id="c6">
+                                            <!-- <img class="size_img" src="./img/ico_p2.gif" alt="ico_p2"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">쿼터</div>
+                                                <p>4가지 맛을 골라먹는 재미가<br>
+                                                    있는 사이즈 (중량 620g)</p>
+                                                <p><span class="size_price">17000</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_r cup3" id="c7">
+                                            <!-- <img class="size_img" src="./img/ico_p3.gif" alt="ico_p3"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">패밀리</div>
+                                                <p>5가지 맛을 나눠먹는 재미가<br>
+                                                    있는 사이즈 (중량 960g)</p>
+                                                <p><span class="size_price">24000</span>원</p>
+                                            </div>
+                                        </div>
+                                        <div class="size size_r cup4" id="c8">
+                                            <!-- <img class="size_img" src="./img/ico_p4.gif" alt="ico_p4"> -->
+                                            <div class="size_desc">
+                                                <div class="size_title">하프갤런</div>
+                                                <p>6가지 맛을 나눠먹는 재미가<br>
+                                                    있는 사이즈 (중량 1200g)</p>
+                                                <p><span class="size_price">29000</span>원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                            <div class="detailbox item_opt_box">
+                                <div class="handpack_opt_wrap">
+                                    <h3>추가로 원하는 맛을 선택해주세요</h3>
+                                    <div class="handpack_opt swiper mySwiper">
+                                        <div class="flavor_box swiper-wrapper">
+                                            <!-- <div class="flavor swiper-slide">
+                                                <img src="./img/item/icecream/1.png" alt="icecream">
+                                                <div class="flavor_title">엄마는 외계인</div>
+                                            </div> -->    
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <div class="choose_p_wrap">
+                                <!-- <div class="choose_wrap">
+                                        <div class="choose_box opt_name">
+                                            <span class="option_title">엄마는 외계인</span>
+                                            <span>,</span>
+                                            <span class="option_size">싱글킹</span>
+                                        </div>
+                                        <div class="choose_box opt_qty">
+                                            <input type="button" value="-" class="btn_qty qty_minus">
+                                            <input type="text" value="1" class="qty_num">
+                                            <input type="button" value="+" class="btn_qty qty_plus">
+                                            <input type="text" value="${tmp_index}" class="hidden_index">
+                                            <div class="choose_box btn_close_box">
+                                                <img class="btn_close" src="./img/btn_close.png" alt="btn_close">
+                                            </div>
+                                        </div>
+                                        <div class="choose_box item_price"><span>4900</span>원</div>
+                                    </div> -->
+                                </div>
+    
+                                <div class="handpack_plus_wrap">
+                                    <!-- <div class="choose_wrap handpack_wrap">
+                                        <div class="choose_box handpack_plus">
+                                            <span>(추가)</span>
+                                            <span class="option_title2">엄마는 외계인</span>
+                                        </div>
+                                        <div class="choose_box btn_close_box">
+                                            <img class="btn_close" src="./img/btn_close.png" alt="btn_close">
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_wrap">
+                            <span class="won">TOTAL: </span>
+                            <span class="total_price won">원</span>
+                            <span class="total_price number">0</span>
+                        </div>
+
+                        <div class="btn_wrap">
+                            <div class="btn_item btn_buy">BUY IT NOW</div>
+                            <div class="btn_item btn_addcart">ADD TO CART</div>
+                            <div class="btn_item btn_wishlist">WISH LIST</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec1">
+                <div class="event">
+                    <h3>진행중인 이벤트</h3>
+                    <ul>
+                        <li><a href="#">5월 이달의 맛 인스타그램에 사진을 올려주세요!</a></li>
+                        <li><a href="#">포켓몬 스티커팩 3개입 랜덤 100원 증정!</a></li>
+                        <li><a href="#">함께하는 식품안전 건강한 대한민국, 식품안전의 날!</a></li>
+                    </ul>
+                </div>
+                <div class="delivery">
+                    <h3>HAPPY ORDER & DELIVERY</h3>
+                    <div class="delivery_img">
+                        <a href="#">
+                            <img class="delivery_img_1" src="./img/img_happy_order.png" alt="delivery">
+                            <img src="./img/img_order_code.png" alt="order_code">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <ul class="footer_ul footer_top_ul">
+                <li><a href="#">점포개설문의</a></li>
+                <li><a href="#">채용문의</a></li>
+                <li><a href="#">윤리신고센터</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                <li><a href="#">거래희망회사 사전등록</a></li>
+            </ul>
+            <ul class="footer_ul footer_min_ul">
+                <li><a href="#"><img src="./img/btn_happypoint.png" alt="btn_happypoint"></a></li>
+                <li><a href="#"><img src="./img/btn_happymarket.png" alt="btn_happymarket"></a></li>
+                <li class="btn_spc_story"><a href="#"><img src="./img/btn_spc_story.png" alt="btn_spc_story"></a></li>
+                <li class="btn_norton">
+                    <a href="#"><img src="./img/btn_norton.gif" alt="btn_norton"></a>
+                    <a href="#"><img class="btn_ccm_2" src="./img/btn_ccm_2.png" alt="btn_ccm_2"></a>
+                    <a href="#"><img src="./img/btn_ksa.png" alt="btn_ksa"></a>
+                </li>
+                <li>
+                    <select name="sel_family">
+                        <option value="1">FAMILY SITE</option>
+                        <option value="1">배스킨스쿨</option>
+                        <option value="1">SPC 그룹사이트</option>
+                        <option value="1">SPC MAGAZINE</option>
+                        <option value="1">BR코리아</option>
+                        <option value="1">해피포인트카드</option>
+                        <option value="1">파스쿠찌</option>
+                        <option value="1">삼립</option>
+                        <option value="1">파리바게트</option>
+                        <option value="1">던킨도너츠</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="footer_bot_ul">
+                <li>
+                    <ul class="fb f_b_1">
+                        <li>사업자 등록번호 : 303-81-09535</li>
+                        <li>비알코리아(주) 대표이사 도세호</li>
+                        <li>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="fb f_b_2">
+                        <li>TEL : 080-555-3131</li>
+                        <li>개인정보관리책임자 : 김경우</li>
+                    </ul>
+                </li>
+                <li class="fb f_b_3">
+                    Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                </li>   
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

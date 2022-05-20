@@ -1,0 +1,118 @@
+
+
+/* 아이템 박스들 */
+.item_area {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_box{
+    width: calc(100% / 4);
+    /* height: 60vh; -> 높이 굳이 안묶어두고 안에 자식들끼리 알아서 높이 잡게끔 */
+
+    box-shadow: 0 0 0 1px #000;
+    background-color: #fff;
+
+    position: relative;
+    padding: 40px;
+    padding-top: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden ;
+}
+.item_box:hover .react_icon_box {
+    transform: translateY(0);
+}
+.react_icon_box {
+    display: inline-block;
+
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    
+    transform: translateY(-40px);
+    transition: all 0.2s;
+}
+.react_icon {
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+}
+.i_like {
+    background: url(../img/icon/하트.png)no-repeat center / cover;
+    background-position: unset;
+}
+.i_reply {
+    background: url(../img/icon/말풍선.png)no-repeat center / cover;
+}
+.i_cart {
+    background: url(../img/icon/장바구니.png)no-repeat center / cover;
+}
+.reac_qty {
+    font-size: 13px;
+}
+.img_box {
+    width: 100%;
+    /* height: calc((100vw - ((20px) * 2)) / 2); */
+    font-size: 0;
+
+    border: 1px solid;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+.img_box img {
+    width: 100%;
+}
+.color_otp_box {
+    display: flex;
+}
+.color_opt {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    border: 0.5px solid;
+    box-sizing: border-box;
+
+    background-color: yellow;
+
+    margin: 10px 5px 5px 0px;
+}
+.item_name {
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+.item_price {
+    font-size: 17px;
+}
+.i_inform_box {
+    display: flex;
+    gap: 5px;
+
+    height: 20px;
+
+    margin-top: 15px;
+}
+.inform_icon {
+    width: 40px;
+    height: 100%;
+    line-height: 20px;
+
+    border: 1px solid;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 13px;
+}
+.i_best {background-color: #00ff00;}
+.i_new {color: #00ff00;}
+.i_sale {background-color: #000; color: #00ff00;}

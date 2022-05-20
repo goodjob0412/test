@@ -1,0 +1,223 @@
+body {margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;}
+a {text-decoration: none; color: inherit; display: inline-block;}
+
+.wrap { width:100%; max-width: 1024px;}
+
+/* //////////// 헤더 //////////// */
+
+.header {
+    width:100%;
+    max-width: 1024px;
+    height: 80px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+}
+.header_bg {
+    position: fixed !important;
+    
+    top: 0;
+    left: 0;
+
+    height : 50px !important;
+    background : #fff;
+    box-shadow : 0 0 2px 0 rgba(0,0,0,0.3);
+    color : #000 ;
+    transition: all 0.3s;
+}
+.header_hid {
+    transform: translateY(-100%);
+    transition: all 0.3s;
+}
+
+/* //////////// 햄버거 버튼 //////////// */
+
+.ham_btn {
+    width: 25px;
+    height: 25px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/메뉴\ 3px.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transition: all 0.3s;
+
+}
+.ham_btn_size {
+    width: 20px;
+    height: 20px;
+    left: 20px;
+}
+
+.ham_nav {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-110%);
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    z-index: 99999;
+    
+    text-align: center;
+
+    transition: all 0.3s;
+}
+.ham_nav::-webkit-scrollbar {
+    width: 0;
+}
+
+.ham_close_btn {
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 0 0 0 1px #000;
+    background: #fff url(../../000.제로웨이스트_클럽/img/icon/닫기\ x.png) no-repeat center;
+    background-size: unset;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.nav_li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+
+    box-shadow: 0 0 0 1px #000;
+    background-color: #fff;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav_li_click {
+    background-color: #00ff00
+}
+.sub_menu_box {
+    display: none;
+}
+.sub_menu {
+    font-size: 17px;
+    font-weight: 500;
+
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* //////////// 로고 //////////// */
+.logo {
+    width: 110px;
+    height: 100%;
+    background:url(../../000.제로웨이스트_클럽/img/zwc_logo.png) no-repeat center / contain;
+    text-indent: -9999px;
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-48%);
+
+}
+.logo a {
+    display: block;
+    height: 100%;
+}
+
+/* //////////// 로그인 //////////// */
+
+.login {
+    width: 29px;
+    height: 29px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/로그인\ 3px.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+.login_size {
+    width: 23px;
+    height: 23px;
+    right: 20px;
+}
+
+
+/* //////////// shop 네비 //////////// */
+
+.shop_menu {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+
+    display: flex;
+    /* justify-content: center; */
+
+    text-align: center;
+
+    padding-top: 80px;
+
+    overflow-x: scroll;
+}
+.menu_li_outer {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+.shop_menu_li {
+    padding: 0 15px;
+    height: 100%;
+
+    box-shadow: 0 0 0 1px #000;
+    background-color: #fff;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    float: left;
+}
+.shop_menu_li a {
+    display: block;
+}
+.shop_menu_li:hover {
+    color: #00ff00;
+    box-shadow: 0 0 0 1px #00ff00;
+    z-index: 9;
+}
+.shop_menu_li_click {
+    color: #00ff00;
+    box-shadow: 0 0 0 1px #00ff00;
+    z-index: 9;
+}
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+}
+
+
+@media screen and (max-width: 450px) {
+    .menu_li_outer {
+        justify-content: left;
+    }
+}

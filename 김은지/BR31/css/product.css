@@ -1,0 +1,146 @@
+.topbanner {
+    width: 100%;
+    height: 310px;
+    /* background: url(../img/product_banner/1.gif) no-repeat center / cover; */
+}
+/* best==================================== */
+/* ======================================== */
+.swiper {
+    display: none;
+}
+.sec {
+    margin-top: 0;
+}
+.weeklybest {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    /* margin-top: 50px; */
+} 
+.weeklybest_number {
+    width: 31px;
+    height: 38px;
+    background: url(../img/icon_rank_1.png) no-repeat center / contain;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    margin: 0 auto;
+}
+.number2 {
+    background: url(../img/icon_rank_2.png) no-repeat center / contain;
+}
+.number3 {
+    background: url(../img/icon_rank_3.png) no-repeat center / contain;
+}
+.number4 {
+    background: url(../img/icon_rank_4.png) no-repeat center / contain;
+}
+.item_title {
+    text-align: center;
+    margin: 10px 0;
+}
+.item_title > a {
+    font-size: 16px;
+}
+.sec_title::before {
+    background: url(../img/icon_title_1.png) no-repeat center / contain;
+}
+.item_icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 1;
+}
+.best_box, .icecream_box, .icecreamcake_box, .beverage_box, .coffee_box, .dessert_box  {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* background: #ddd; */
+    border-radius: 50%;
+    position: relative;
+    /* background: pink; */
+    transform: translateY(-2px);
+}
+/* .weeklybest_item:hover .best_box {
+    transform: translateY(-15px);
+}
+.weeklybest_item:hover .item_icon {
+    opacity: 1;
+}
+.weeklybest_item:hover {
+    border-bottom: 5px solid #ffe102;
+} */
+.best {
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icecream_cone {
+    width: 66px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* icecream================================ */
+/* ======================================== */
+.item_box {
+    width: 80%;
+    /* height: 400px; */
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* border-width: 1px 0 0 1px; */
+}
+.item {
+    width: calc(100% /4);
+    height: 300px;
+    /* border: 1px solid #ebebeb;
+    border-width: 0 1px 1px 0; */
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+.item > .item_title {
+    padding-top: 30px;
+    font-size: 20px;
+}
+.item_desc {
+    font-size: 14px;
+    color: #bababa;
+    /* font-family: 'NanumGothicLight';
+    font-family: 'NanumGothic';
+    font-family: 'NanumGothicBold'; */
+    font-family: 'NanumGothicExtraBold';
+}
+.btn_buynow {
+    width: 60px;
+    height: 20px;
+    line-height: 22px;
+    background: #bababa;
+    color: white;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 13px;
+    transform: translateY(8px);
+
+    font-family: 'NanumGothicLight';
+}
+/* .icecream_box {
+    position: relative;
+    height: ;
+} */
+.icecream, .icecreamcake, .beverage, .coffee, .dessert {
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}

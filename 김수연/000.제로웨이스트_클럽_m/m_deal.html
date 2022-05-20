@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제로웨이스트 클럽</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/m_common.css">
+    <link rel="stylesheet" href="css/m_deal.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="js/shop_item_list.js"></script>
+    <script defer src="js/m_common.js"></script>
+    <script defer src="js/m_deal.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+    <header class="header">
+        <div class="ham_btn"></div>
+        <div class="logo">
+            <a href="./m_index.html">로고</a>
+        </div>
+        <div class="login"></div>
+    </header>
+    
+    <div class="ham_nav">
+        <div class="ham_close_btn"></div>
+        <div class="nav_li">장보기</div>
+        <div class="sub_menu_box">
+            <a href="./m_shop.html?cate_no=999" class="sub_menu">
+                전체상품 둘러보기
+                <div class="link_arrow"></div>
+            </a>
+            <a href="./m_shop.html?cate_no=0" class="sub_menu">
+                욕실
+                <div class="link_arrow"></div>
+            </a>
+            <a href="./m_shop.html?cate_no=1" class="sub_menu">
+                부엌
+                <div class="link_arrow"></div>
+            </a>
+            <a href="./m_shop.html?cate_no=2" class="sub_menu">
+                일상
+                <div class="link_arrow"></div>
+            </a>
+            <a href="./m_shop.html?cate_no=3" class="sub_menu">
+                여성용품
+                <div class="link_arrow"></div>
+            </a>
+            <a href="./m_shop.html?cate_no=4" class="sub_menu">
+                식품
+                <div class="link_arrow"></div>
+            </a>
+        </div>
+        <div class="nav_li">ZWC소개</div>
+        <div class="sub_menu_box">
+            <a href="#" class="sub_menu">
+                ZEROWASTE?
+                <div class="link_arrow"></div>
+            </a>
+            <a href="#" class="sub_menu">
+                ZWC는!
+                <div class="link_arrow"></div>
+            </a>
+        </div>
+        <div class="nav_li">아나바다</div>
+        <div class="sub_menu_box">
+            <a href="#" class="sub_menu">
+                아껴쓰고
+                <div class="link_arrow"></div>
+            </a>
+            <a href="#" class="sub_menu">
+                나눠쓰고
+                <div class="link_arrow"></div>
+            </a>
+            <a href="#" class="sub_menu">
+                바꿔쓰고
+                <div class="link_arrow"></div>
+            </a>
+            <a href="#" class="sub_menu">
+                다시쓰고
+                <div class="link_arrow"></div>
+            </a>
+        </div>
+        <div class="nav_li">GRWZ</div>
+        <div class="nav_li">분리수거</div>
+        <div class="sub_menu_box">
+            <a href="#" class="sub_menu">
+                분리배출 표시로 보기
+                <div class="link_arrow"></div>
+            </a>
+            <a href="#" class="sub_menu">
+                일상속 쓰레기로 보기
+                <div class="link_arrow"></div>
+            </a>
+        </div>
+    </div>
+            
+        <!-- 샵 메뉴 css는 m_common.css에서 관리 -->
+        <div class="shop_menu">
+            <div class="menu_li_outer">
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=999">전체</a>
+                </div>
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=0">욕실</a>
+                </div>
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=1">주방</a>
+                </div>
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=2">일상</a>
+                </div>
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=3">여성 용품</a>
+                </div>
+                <div class="shop_menu_li">
+                    <a href="./m_shop.html?cate_no=4">음식</a>
+                </div>
+            </div>
+        </div>
+    <main class="header_active">
+<!--                 메인                   -->
+        <div class="main_content">
+
+            <div class="l_goods_outer">
+                <div class="l_content_area">
+                    <!-- <img src="img/deal/스테인레스 빨대.png" alt="스테인레스 빨대">
+
+                    <img src="img/deal/스테인레스 빨대 1개.jpg" alt="스테인레스 빨대 직선">
+
+                    <img src="img/deal/스테인레스 빨대 곡선 1개.jpg" alt="스테인레스 빨대 곡선">
+                    -->
+                </div>
+            </div>
+<!--              오른쪽 구매 창               -->
+            <div class="r_buy_outer">
+                <div class="part_border">
+                    <div class="r_content_area">
+                        <div class="name"></div>
+                        <div class="price"></div>
+                    </div>
+                </div>
+
+<!--              상세정보 섹션               -->
+                <div class="part_border">
+                    <div class="r_content_area">
+                        <h3>카페 갈 때, 가방에 쏙!</h3>
+                        <div class="detail_hid">
+                            <div class="info_title">
+                                <span class="open_btn"></span>
+                                메세지
+                            </div>
+                            <div class="detail_info detail_info_h">
+                                카페에서 음료 주문할 때,<br>
+                                "빨대는 괜찮아요."를 젠틀하게 덧붙이며 가방에서 스테인리스 빨대를 꺼내는 당신.
+                                <br>
+                                상상만으로도 매우 멋져요!
+                                <br><br>
+                                플라스틱 빨대가 자연에서 분해되는데 500년이 걸린다는 것, 알고 있나요?<br>
+                                그리고 그 빨대가 해양 동물들에게 엄청난 고통을 주고 있다고 해요.
+                                <br><br>
+                                1인당 하루 평균 일회용 빨대 사용량은 16개. 평생동안은 약, 35,000개의 빨대를 사용한다고 해요.<br>
+                                반영구적으로 사용할 수 있는 스테인리스 빨대로 대체하여 오늘부터 무해한 사람이 되어보아요.
+                            </div>
+                            <div class="info_title">
+                                <span class="open_btn"></span>
+                                배출 방법
+                            </div>
+                            <div class="detail_info">
+                                제품 : 캔류 (철)
+                            </div>
+                            <div class="info_title">
+                                <span class="open_btn"></span>
+                                사이즈
+                            </div>
+                            <div class="detail_info">
+                                직선 : 24cm<br>
+                                곡선 : 23cm
+                            </div>
+                            <div class="info_title">
+                                <span class="open_btn"></span>
+                                대체품
+                            </div>
+                            <div class="detail_info">
+                                플라스틱 빨대 (일회용 빨대)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--              후기 / QNA               -->
+        <div class="reveiw_qna">
+            <div class="review_btn review_btn_click">구매 후기</div>
+            <div class="review_btn">Q & A</div>
+        </div>
+        <div class="reveiw_qna_area">
+            <div class="reveiw_qna_box">아직 구매후기가 없어요!</div>
+            <div class="reveiw_qna_box">아직 질문이 없어요!</div>
+        </div>
+
+        <div class="other_goods_outer">
+            <div class="other_goods_title">이런 상품은 어때요?</div>
+            <div class="other_goods other_goods_1">
+                <a href="./m_deal.html?cate_no=1&item_no=3">
+                    <div class="shop_in">보틀 세척솔 보러가기
+                        <div class="link_arrow"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="other_goods other_goods_2">
+                <a href="./m_deal.html?cate_no=2&item_no=5">
+                    <div class="shop_in">텀블러 보러가기
+                        <div class="link_arrow"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+
+    <!--           사이즈 옵션            -->                
+
+    <div class="opt_fixed">
+        <div class="opt_btn opt_btn_close"></div>
+
+        <div class="option_title">
+                사이즈 (필수) <span class="open_btn"></span>
+        </div>
+        <div class="option_box">
+            <!-- <div class="option">직선 24cm</div>
+            <div class="option">곡선 23cm</div> -->
+        </div>
+<!-- 옵션 .length > 0 -->
+
+
+<!-- 옵션 .length = 0 -->
+            <!-- <div class="selec_box">
+                <div class="selec_sec">
+                    <div class="qty_box">
+                        <div class="minus_btn"></div>
+                        <input type="text" value="1" class="qty_num" readonly>
+                        <div class="plus_btn"></div>
+                    </div>
+                    <div class="selec_x_btn"></div>
+                </div>
+                <div class="selec_sec">
+                    <span class="sel_name">${data.title}</span>
+                    <div class="item_price">${comma(ITEM_LIST[cate_no][item_no].o_price[0])}원</div>
+                </div>
+            </div> -->
+            <div class="ttt"></div>
+            <div class="total_price">
+                총 금액 : <span>0원</span>
+            </div>
+
+
+    </div>
+    <div class="cart_btn_box">
+        <div class="cart_btn_common heart_btn"></div>
+        <div class="cart_btn_common cart_btn">
+            CART
+        </div>
+        <div class="cart_btn_common buy_btn">BUY</div>
+    </div>
+</div>
+</body>
+</html>

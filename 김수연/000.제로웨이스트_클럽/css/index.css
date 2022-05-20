@@ -1,0 +1,559 @@
+
+/* 헤더 */
+.header {
+    width: 100%;
+    min-width: 1440px;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 99999;
+}
+
+.wrap {
+    min-width: 1440px;
+    /* overflow: hidden; */
+}
+/* 메인 */
+.main_bn {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+.main_bn_comm {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.v_0 { 
+    height: 100%;
+}
+.v_1 {
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_bn0 {
+    display: block;
+}
+.main_bn1 {
+    display: none;
+}
+.main_bn0 .main_show_more {
+    position: absolute;
+    top: 45%;
+    right: 40%;
+}
+.main_bn1 .main_show_more {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.show_more_btn {
+    width: 35px;
+    height: 35px;
+    background: url(../img/icon/메인베너\ 더보기.png) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    cursor: pointer;
+}
+.show_more_box {
+    display: block;
+    width: 200px;
+    display: none;
+
+    background-color: #fff;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    
+    cursor: pointer;
+}
+.show_more_box .img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    background: url(../img/shop_page/욕실/조르단칫솔2.jpg) no-repeat center / cover;
+}
+.main_bn1 .img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    background: url(../img/shop_page/일상/비기컵2.jpg) no-repeat center / cover;
+}
+.main_show_more .link_arrow {
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/icon/들어가기\ 화살표.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.show_more_box .dsc { text-align: left;}
+.show_more_box .dsc:hover {
+    color: #00ff00;
+}.show_more_box .dsc:hover +.link_arrow {
+    background-position-y: -17px;
+}
+
+/* 장보기 섹션 */
+.shop_sec {
+    width: 100%;
+    height: 100vh;
+}
+.title_box {
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.shop_sec .title_box {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid;
+    
+    position: relative;
+}
+.sec_txt {
+    display: inline-block;
+    height: 30px;
+    border-bottom: 1.5px solid;
+}
+.sec_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.title_box a:hover {
+    color: #00ff00;
+}
+.title_box a:hover .link_arrow {
+    background-position-y: -26.5px;
+}
+.title_box .link_arrow, .shop_in .link_arrow{
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin-left: 10px;
+    background: url(../img/icon/들어가기\ 화살표.png) no-repeat;
+    background-size: cover;
+}
+.btn_box {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+
+    display: flex;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon/양쪽\ 넘김버튼.png) no-repeat;
+}
+.btn_prev {
+    /* background-position: 46px; */
+    background-size: cover;
+}
+.btn_next {
+    background-position: -76px;
+    background-size: cover;
+}
+.shop_item_box {
+    position: relative;
+    /* height: 100%; */
+    height: calc(100% - 140px);
+
+    overflow: hidden;
+}
+.shop_item {
+    position: absolute;
+    top: 0;
+
+    width: calc(100% / 4);
+    height: calc(100vh - 140px);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+.shop_item > a {
+    width: 100%;
+}
+.shop_img_box {
+    width: 100% ;
+    height: calc((100vw - (30px * 4 *2))/4);
+    min-height: 300px;
+
+    border: 1px solid;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    position: relative;
+}
+.shop_img {position: absolute; left: 0; top: 0; height: 100%;}
+.item_name, .price {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.item_name {
+    font-size: 25px;
+}
+.shop_in {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 50px;
+    background-color: #00ff00;
+
+    font-size: 18px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition: 0.2s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop_in a {
+    width: 100%;
+    height: 100%;
+}
+.shop_item:hover .shop_in {
+    transform: translateY(0);
+}
+
+/* 아나바다 섹션 */
+.anbd_sec {
+    display: flex;
+}
+.anbd_l {
+    width: calc(100% /4);
+}
+.anbd_sec .title_box {
+    height: 100vh;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    box-sizing: border-box;
+}
+.anbd_r {
+    width: calc(100% - (100% / 4));
+    height: 100vh;
+
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid;
+}
+.anbd_r::-webkit-scrollbar {
+    opacity: 0;
+}
+.anbd_area {
+    width: calc(100% / 3);
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+    float: left; 
+    /* display :flex 했더니 padding이 이상하게 먹음. 그건 flex하면 자기 마음대로 사이즈를 조정해서 이상해질수 있음. 그래서 그럴 땐 걍 float이나 position으로 하셈. */
+}
+.anbd_area:nth-child(2) {
+    transform: translateY(25%);
+}
+/* a자체로 부모가 될 수 있음. 잊지 말자. 그리고 a도 img도 인라인 레벨이고, 부모 사이즈가 어떻든간에 자기 사이즈만큼 먹으니까. a에 따로 사이즈 주지 않고, 자식한테 100%먹어라 하면 자식만큼 넓이가 넓어지겄지? */
+.anbd_content_box {
+    width: 100%;
+    height: 550px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+}
+.anbd_content_box:hover {
+    background-color: #00ff00;
+}
+.anbd_img {
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+.anbd_img img {
+    /* width: 100%; */
+    height: 100%;
+}
+.img_scale {
+    transform: scale(1.2);
+}
+.anbd_categ,.anbd_dsc {
+    font-size: 17px;
+    margin: 10px;
+}
+.anbd_dsc {
+    font-size: 15px;
+}
+
+/* 자동 베너 */
+.auto_sm_bn {
+    width: 100%;
+    height: 70px;
+    border: 1px solid;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.sm_txt {
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 70px;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* grwz 섹션 */
+.grwz {width: 100%; height: 100vh; display: flex; flex-wrap: wrap;}
+.grwz .title_box {
+    width: calc(100% /4);
+    height: calc(100% - 72px);
+    border-right: 1px solid;
+    box-sizing: border-box;
+}
+.grwz .link_arrow {margin: 0;}
+.grwz h2 {
+    margin: 20px 0 10px;
+    font-size: 25px;
+}
+.grwz p {
+    margin: 0;
+    font-weight: 400;
+    line-height: 40px;
+}
+.grwz_r {
+    width: calc(100% - (100% / 4));
+    height: calc(100% - 72px);
+    
+    position: relative;
+    overflow: hidden;
+}
+.grwz_r_pos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: all 0.5s;
+}
+
+.grwz_date {
+    width: 100%;
+    height: calc(100% / 7);
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+.date {font-size: 30px; width: 40px;}
+.day, .mission {
+    width: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.mission {
+    width: calc(100% - (40px + 100px));
+    font-weight: 300;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open_btn {
+    display: inline-block;
+    width: 40px;
+    height: 19px;
+    background: url(../img/icon/위아래\ 펼치기.png) no-repeat;
+    background-position: 4px 0px;
+    background-size: 87px;
+}
+
+/* 높이만 바꾸는 껍데기 역할 */
+.grwz_hidden {
+    /* height: calc(100% - (100% / 7)); */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.grwz_img_shadow {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
+}
+.grwz_hidden_active {
+    height: calc(100% - (100% / 7));
+}
+.grwz_dsc_area {
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: relative;
+}
+.grwz_dsc_area:hover .shop_in {
+    transform: translateY(0);
+    cursor: pointer;
+}
+.grwz_img {
+    height: 250px;
+}
+.grwz_img img {
+    height: 100%;
+    transform: rotate(-10deg);
+    pointer-events: none;
+}
+.grwz_img:hover img {
+    transform: rotate(10deg);
+}
+.grwz_dsc {
+    width: 50%;
+    float: right;
+}
+.dsc_title {
+    font-size: 30px;
+    font-weight: 500;
+}
+.dsc_title + h2 {
+    white-space: nowrap;
+}
+
+/* 분리수거 섹션 */
+.waste_sec .title_box {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+    position: relative;
+}
+.waste_btn_box {
+    position: absolute;
+
+    left: 40px;
+    bottom: 30px;
+
+    display: flex;
+}
+.waste_btn {
+    display: block;
+
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+
+    border: 1px solid;
+
+    cursor: pointer;
+}
+.waste_btn_bg {
+    background-color: #00ff00;
+}
+
+.waste_ex {
+    width: 100%;
+    height: 200px;
+}
+.ex_li {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: none;
+}
+.ex_li div {
+    float: left;
+    width: calc((100% - 10px *2) / 4);
+    height: 100%;
+
+    text-align: center;
+}
+.ex_li:first-child > div:nth-child(1) img,
+.ex_li:first-child > div:nth-child(4) img {
+    height: 135%;
+}
+.ex_li img {
+    height: 100%;
+
+    cursor: pointer;
+}
+.recycle_mark {
+    display: block;
+}
+
+
+

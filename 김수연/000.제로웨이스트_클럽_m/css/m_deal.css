@@ -1,0 +1,461 @@
+
+/* ///////////// 메인 ////////////// */
+.main_content {
+    width: 100%;
+}
+.l_goods_outer {
+    height: calc(100vw);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.l_goods_outer::-webkit-scrollbar{
+    width: 3px;
+}
+.l_goods_outer::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: #000;
+}
+/* .l_goods_outer::-webkit-scrollbar-track{
+    background-color: #00ff00;
+} */
+.l_content_area {
+    width: 100%;
+    font-size: 0;
+}
+.l_content_area > img {
+    width: 100%;
+}
+.l_content_area > p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+}
+.r_buy_outer {
+    /* position: relative; */
+    
+    position: static;
+}
+.part_border {
+    border-bottom: 1px solid;
+}
+.r_content_area {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.part_border:nth-child(2) {
+    border-bottom: 0;
+}
+.part_border:nth-child(2) >.r_content_area {
+    padding: 10px 15px 30px;
+}
+.name {
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 33px;
+}
+.price {
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 33px;
+}
+
+/* /////////////// 상세정보 칸 //////////////// */
+
+.r_content_area > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0
+}
+.detail_hid {
+    width: 100%;
+    /* height: 40vh; */
+    /* max-height: 375px; */
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.detail_hid::-webkit-scrollbar {
+    opacity: 0;
+}
+.info_title {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.info_title_click { font-size: 17px; font-weight: 600;}
+.info_title:hover {cursor: pointer;}
+
+.open_btn {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/위아래\ 펼치기.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 35px;
+
+    margin-right: 10px;
+}
+.info_title:nth-child(1) > .open_btn {background-position-x : -20px}
+.detail_info {
+    margin-left: 30px;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    
+    height: 0;
+    overflow: hidden;
+}
+.detail_info_h {
+    height: auto;
+}
+
+
+/* ///////////// 사이즈 옵션 ///////////// */
+
+.opt_fixed {
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+
+    background-color: #fff;
+    border-top: 1px solid #000;
+
+    margin-bottom: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    transform: translateY(100%);
+    transition: all 0.2s;
+}
+.opt_fixed_up {
+    transform: translateY(0%);
+}
+.opt_btn {
+    width: 50px;
+    height: 30px;
+    background: url(../../000.제로웨이스트_클럽/img/icon/옵션\ 버튼.png) no-repeat;
+    background-position: 0 4px;
+    background-size: cover;
+
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+
+    display: none;
+}
+.opt_btn_close {
+    background-position: 0 -33px;
+}
+
+.option_title {
+
+    height: 27px;
+    
+    background-color: #fff;
+    box-shadow: 0 0 0 0.5px #000;
+    padding: 5px 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option_box {
+    width: 100%;
+    background-color: #fff;
+
+    display: none;
+}
+.option{
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0 0 0 0.5px #000;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.option_title .open_btn {
+    margin: 0;
+}
+.open_btn_x {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/닫기\ x.png) no-repeat;
+    background-position: -20px 5px;
+    background-size: 35px;
+}
+
+.selec_box {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    /* display: none; */
+}
+.selec_sec {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.selec_sec:nth-child(1) {
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.sel_name, .total_price {
+    font-size: 15px;
+    font-weight: 500;
+}
+.qty_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+}
+.minus_btn, .plus_btn {
+    width: 30px;
+    height: 30px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/수량\ 버튼.png) no-repeat;
+    background-size: auto 115%;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 0 0.5px #000;
+}
+.minus_btn {
+    background-position: -2px;
+}
+.plus_btn {
+    background-position: -57px;
+}
+.qty_num {
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+
+    font-size: 17px;
+    padding: 0 10px;
+
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 0.5px #000;
+
+    text-align: center;
+}
+.selec_x_btn {
+    width: 20px;
+    height: 20px;
+    
+    background: url(../../000.제로웨이스트_클럽/img/icon/닫기\ x.png) no-repeat center / cover;
+
+    cursor: pointer;
+}
+.hidden_index {
+    display: none;
+}
+.total_price {
+    font-size: 17px;
+    font-weight: 500;
+
+    text-align: right;
+}
+.total_price span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.cart_btn_box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+
+    z-index: 99;
+    cursor: pointer;
+}
+.cart_btn_common {
+    height: 100%;
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+
+    box-shadow: 0 0 0 1px #000;
+    cursor: pointer;
+}
+.heart_btn {
+    width: 40px;
+    background: #fff url(../../000.제로웨이스트_클럽/img/icon/하트.png) no-repeat center;
+    background-size: 25px;
+}
+.heart_btn_bg {
+    background-color: #00ff00;
+}
+.cart_btn {
+    width: calc((100% - 40px) / 2);
+    background-color: #fff;
+}
+.buy_btn {
+    width: calc((100% - 40px) / 2);
+    background-color: #000;
+    color: #00ff00;
+}
+.reveiw_qna {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+}
+.review_btn {
+    width: 50%;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+}
+.review_btn_click {background-color: #00ff00; font-weight: 600;}
+.reveiw_qna_area {
+    width: 100%;
+    height: 300px;
+
+    position: relative;
+}
+.reveiw_qna_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 15px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #fff;
+    z-index: 2;
+}
+.reveiw_qna_box:nth-child(2) {
+    z-index: 1;
+}
+
+/* ///////////// 관련 상품 /////////// */
+.other_goods_title {
+    width: 100%;
+    height: 40px;
+
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.other_goods_outer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.other_goods {
+    width: calc(100% /2);
+    height: calc(100vw /2);
+
+    box-shadow: 0 0 0 1px #000;
+}
+.other_goods_1 {
+    background: url(../../000.제로웨이스트_클럽/img/shop_page/주방/세척솔1.jpg) no-repeat center / cover;
+}
+.other_goods_2 {
+    background: url(../../000.제로웨이스트_클럽/img/shop_page/일상/스토조보틀1.jpg) no-repeat center / cover;
+}
+
+.other_goods img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.other_goods {
+    position: relative;
+    overflow: hidden;
+}
+.other_goods img {
+    width: 100%;
+}
+.other_goods .shop_in {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    /* height: 30px; */
+    background-color: #00ff00;
+
+    font-size: 15px;
+
+    padding: 10px 5px;
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+.other_goods:hover .shop_in {
+    transform: translateY(0);
+}
+
+.link_arrow {
+    width: 20px;
+    height: 20px;
+
+    background: url(../../000.제로웨이스트_클럽/img/icon/들어가기\ 화살표.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}

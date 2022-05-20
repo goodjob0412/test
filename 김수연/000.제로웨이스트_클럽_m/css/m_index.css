@@ -1,0 +1,590 @@
+
+/* 헤더 */
+
+.wrap { max-width: 1024px ;overflow: hidden;}
+
+.header {
+    width:100%;
+    max-width: 1024px;
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+}
+
+
+/* 메인 */
+.main_bn {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+
+    position: relative;
+}
+.main_bn_comm {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.video {
+    height: 100%;
+    object-fit: cover;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s;
+}
+
+.main_bn0 {
+    display: block;
+}
+.main_bn1 {
+    display: none;
+}
+.main_bn0 .main_show_more {
+    position: absolute;
+    top: 45%;
+    right: 40%;
+}
+.main_bn1 .main_show_more {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.show_more_btn {
+    width: 35px;
+    height: 35px;
+    background: url(../../000.제로웨이스트_클럽/img/icon/메인베너\ 더보기.png) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.show_more_box {
+    width: 200px;
+    display: none;
+
+    background-color: #fff;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-42%);
+}
+.main_bn0 .img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    background: url(../../000.제로웨이스트_클럽/img/shop_page/욕실/조르단칫솔1.jpg) no-repeat center / cover;
+}
+.main_bn1 .img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    background: url(../../000.제로웨이스트_클럽/img/shop_page/일상/비기컵2.jpg) no-repeat center / cover;
+}
+.main_show_more .link_arrow {
+    width: 20px;
+    height: 20px;
+
+    background: url(../..//000.제로웨이스트_클럽/img/icon/들어가기\ 화살표.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* 장보기 섹션 */
+.shop_sec {
+    width: 100%;
+    /* height: 100vh; */
+}
+.title_box {
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.shop_sec .title_box {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid;
+    
+    position: relative;
+}
+.sec_txt {
+    display: inline-block;
+    height: 25px;
+    font-size: 15px;
+
+    border-bottom: 1.5px solid;
+}
+.sec_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.title_box a:hover {
+    color: #00ff00;
+}
+.title_box a:hover .link_arrow {
+    background-position-y: -26.5px;
+}
+.title_box .link_arrow, .shop_in .link_arrow{
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin-left: 10px;
+    background: url(../..//000.제로웨이스트_클럽/img/icon/들어가기\ 화살표.png) no-repeat;
+    background-size: cover;
+}
+.btn_box {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+}
+.btn {
+    width: 35px;
+    height: 35px;
+    background: url(../../000.제로웨이스트_클럽/img/icon/양쪽\ 넘김버튼.png) no-repeat;
+}
+.btn_prev {
+    /* background-position: 46px; */
+    background-size: cover;
+}
+.btn_next {
+    background-position: -53px;
+    background-size: cover;
+}
+.shop_item_box {
+    position: relative;
+    height: 100%;
+
+    overflow: hidden;
+}
+.shop_item {
+    position: absolute;
+    top: 0;
+
+    width: calc(100% / 2);
+    /* height: calc(50vh - 140px / 2); */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+
+    /* padding: 30px; */
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shop_item_child {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 0 1px #000;
+    background-color: #fff;
+    
+    position: relative;
+}
+.shop_item > .shop_item_child > a {
+    width: 100%;
+}
+.shop_img_box {
+    width: 100% ;
+    font-size: 0;
+
+    border: 1px solid;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    position: relative;
+}
+.shop_img {width: 100%;}
+/* .shop_img:nth-child(1){position: absolute; left: 0; top: 0; } */
+.shop_img:nth-child(1) {display: none;}
+.item_name, .price {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    
+    text-overflow: ellipsis;
+}
+.item_name {
+    font-size: 20px;
+}
+.shop_in {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 45px;
+    background-color: #00ff00;
+
+    font-size: 16px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+.shop_item_child:hover .shop_in {
+    transform: translateY(0);
+}
+
+/* 아나바다 섹션 */
+.anbd_sec .title_box {
+    width: 100%;
+    overflow-x: scroll;
+}
+.anbd_sec .sec_title {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+}
+.anbd_r {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 40px 0;
+    box-sizing: border-box;
+    border-top: 1px solid;
+}
+.anbd_r::-webkit-scrollbar {
+    opacity: 0;
+}
+.anbd_area {
+    width: 300%;
+    /* padding: 0 40px; */
+    box-sizing: border-box;
+    display: flex;
+    /* display :flex 했더니 padding이 이상하게 먹음. 그건 flex하면 자기 마음대로 사이즈를 조정해서 이상해질수 있음. 그래서 그럴 땐 걍 float이나 position으로 하셈. */
+}
+.anbd_content_box {
+    width: calc(100% / 3);
+    max-width: 300px;
+    height: 550px;
+
+    border: 1px solid;
+    border-radius: 30px;
+
+    overflow: hidden;
+    display: block;
+
+    background-color: #fff;
+    margin: 0 20px;
+}
+.anbd_content_box:hover {
+    background-color: #00ff00;
+}
+.anbd_img {
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+.anbd_img img {
+    height: 100%;
+}
+.img_scale {
+    transform: scale(1.2);
+}
+.anbd_categ,.anbd_dsc {
+    font-size: 17px;
+    margin: 10px;
+}
+.anbd_dsc {
+    font-size: 15px;
+}
+
+/* 자동 베너 */
+.auto_sm_bn {
+    width: 100%;
+    height: 60px;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 0 10px;
+
+    overflow: hidden;
+    position: relative;
+}
+.sm_txt {
+    font-size: 30px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 60px;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* grwz 섹션 */
+.grwz {width: 100%;}
+.grwz .title_box {
+    width: 100%;
+    box-sizing: border-box;
+}
+.grwz .link_arrow {margin: 0;}
+.grwz h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.grwz span {
+    margin: 0;
+    font-weight: 400;
+    line-height: 30px;
+}
+.grwz_r {
+    width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+}
+.grwz_r_pos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: all 0.5s;
+}
+
+.grwz_date {
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.date {font-size: 20px; width: 40px; padding: 0 7px}
+.day, .mission {
+    width: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.day {
+    width: 50px;
+    flex: 1 0 50px;
+}
+.mission {
+    width: 100%;
+    font-weight: 300;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open_btn {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: url(../../000.제로웨이스트_클럽/img/icon/위아래\ 펼치기.png) no-repeat;
+    background-position: 4px 0px;
+    background-size: 40px;
+}
+
+/* 높이만 바꾸는 껍데기 역할 */
+.grwz_hidden {
+    /* height: calc(100% - (100% / 7)); */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.grwz_hidden_active {
+    height: calc(100% - (100% / 7));
+}
+.grwz_dsc_area {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+}
+.grwz_dsc_area:hover .shop_in {
+    transform: translateY(0);
+}
+.grwz_img {
+    height: 120px;
+}
+.grwz_img img {
+    height: 100%;
+}
+.grwz_img_shadow {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
+}
+.grwz_dsc {
+    width: 85%;
+}
+.dsc_title {
+    font-size: 17px;
+    font-weight: 500;
+    
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.dsc_title + h2 {
+    font-size: 17px;
+    
+    line-height: 25px;
+}
+.grwz_dsc > .shop_in > .link_arrow {margin-left: 5px;}
+
+/* 분리수거 섹션 */
+.waste_sec .title_box {
+    width: 100%;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+    position: relative;
+}
+.waste_btn_box {
+    margin-top: 20px;
+}
+.waste_btn {
+    display: block;
+
+    width: 100%;
+    height: 35px;
+
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+    border: 1px solid;
+    box-sizing: border-box;
+
+    margin-top: 5px;
+}
+.waste_btn_bg {
+    background-color: #00ff00;
+}
+
+.waste_ex {
+    width: 100%;
+}
+.ex_li {
+    width: 100%;
+    
+    display: none;
+    overflow: hidden;
+}
+.recycle_mark {
+    display: block;
+}
+.ex_li > div {
+    width: calc(100vw / 4);
+    height: calc(100vw / 4);
+    
+    padding: 15px;
+    box-sizing: border-box;
+
+    float: left;
+}
+.waste {
+    width: 100%;
+
+    cursor: pointer;
+}
+
+
+/* 아나바다 섹션 넓이 묶기 */
+@media screen and (min-width : 340px){
+    .anbd_area {
+        width: calc( 340px * 3);
+    }
+}
+/* ///////////////////////////////////////////// */
+/* 메인 페이지 동영상 크기 조절 */
+@media screen and (max-width : 1024px){
+    .video {transform: translate(-50%, -50%) scale(1.2);}
+}
+
+/* grwz 섹션 이미지 크기 조절 */
+@media screen and (min-width: 768px) and (max-width : 1024px){
+    .grwz_dsc_area {
+        width: 100%;
+        height: 100%;
+        
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .grwz_img {
+        height: 210px;
+    }
+    .grwz_dsc {
+        width: 50%;
+    }
+
+    .waste_btn_box {overflow: hidden;}
+    .waste_btn { width: 50%; float: left ;}
+}
+
+/* grwz 섹션 이미지 없애기 */
+@media screen and (max-width : 480px){
+    .ex_li > div {
+        width: calc(100vw / 2);
+        height: calc(100vw / 2);
+    }
+}
+/* 메인 배너 높이 조절, 장보기 섹션 패딩 조절 */
+@media screen and (max-width : 350px){
+    .main_bn {height: 55vh;}
+    .shop_item_child { padding: 10px; transition: all 0.2s;}
+}
+/* grwz 섹션 이미지 없애기 */
+@media screen and (max-width : 320px){
+    .grwz_img { display: none;}
+    .grwz_dsc {
+        width: 90%;
+    }
+}
