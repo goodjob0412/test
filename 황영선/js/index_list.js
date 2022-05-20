@@ -66,7 +66,7 @@ function load_item(data , el, start_index, end_index) {
                                 <img src="./사진/기타/heart-02.png" alt="" class="heart_color">
                             </div>
                             <div>
-                                <img src="../사진/기타/cart (1).png" alt="장바구니" class="item_shop_basket">
+                                <img src="./사진/기타/cart (1).png" alt="장바구니" class="item_shop_basket">
                             </div>
                         </div>
                     </li>`;
