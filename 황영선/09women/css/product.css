@@ -15,7 +15,6 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .pro_img_box {
     width: 100%;
@@ -57,30 +56,30 @@
     cursor: pointer;
 }
 .review1 {
-    background: url(../사진/브케인_반팔_크롭_다단_64968/사진/review1.jpg)no-repeat;
+    background: url(../img/list/img/review1.jpg)no-repeat;
     background-size: contain;
     
     background-size: cover;
     background-position-y: 50%;
 }
 .review2 {
-    background: url(../사진/브케인_반팔_크롭_다단_64968/사진/review2.jpg)no-repeat;
+    background: url(../img/list/img/review2.jpg)no-repeat;
     background-size: cover;
 }
 .review3 {
-    background: url(../사진/브케인_반팔_크롭_다단_64968/사진/review3.jpg)no-repeat;
+    background: url(../img/list/img/review3.jpg)no-repeat;
     background-size: contain;
     background-size: cover;
     background-position-y: 50%;
 }
 .review4 {
-    background: url(../사진/브케인_반팔_크롭_다단_64968/사진/review4.jpg)no-repeat;
+    background: url(../img/list/img/review4.jpg)no-repeat;
     background-size: contain;
     background-size: cover;
     background-position-y: 50%;
 }
 .review5 {
-    background: url(../사진/브케인_반팔_크롭_다단_64968/사진/review5.jpg)no-repeat;
+    background: url(../img/list/img/review5.jpg)no-repeat;
     background-size: cover;
 }
 
@@ -470,7 +469,7 @@ table {
 .p_r_like {
     width: 52%;
     height: 35px;
-    background: url(../사진/기타/like2.png) no-repeat;
+    background: url(../img/ect/like2.png) no-repeat;
     background-size: contain;
     margin: 0 auto;
 }
@@ -583,7 +582,7 @@ table {
 .pr_l_like {
     width: 22%;
     height: 15px;
-    background: url(../사진/기타/like2.png) no-repeat;
+    background: url(../img/ect/like2.png) no-repeat;
     background-size: contain;
     display: inline-block;
 }

@@ -22,7 +22,7 @@ function load_item(data , el, start_index, end_index) {
         let list = `<li class="item_container_li">
                         <div class="item_img_box">
                             <a href="product.html?cate_no=${1}&item_no=${data[i].item_no}">
-                                <img src="./사진/best_plus/${data[i].src}" alt="" class="item_img">
+                                <img src="./img/best_plus/${data[i].src}" alt="" class="item_img">
                             </a>
                             <form name="item_shop" action="" class="item_shop_page">
                                 <select name="item_sec_color" id="color" class="sec_color">
@@ -51,7 +51,7 @@ function load_item(data , el, start_index, end_index) {
 
 
                         for(let j=0; j<data[i].color.length; j++) {
-                            list += `<img src="./사진/기타/${data[i].color[j]}.jpg" alt="">`;
+                            list += `<img src="./img/ect/${data[i].color[j]}.jpg" alt="">`;
                         }
                 list += `</div>
                         <div class="item_info">
@@ -62,11 +62,11 @@ function load_item(data , el, start_index, end_index) {
 
                         <div class="item_user">
                             <div class="item_heart">
-                                <img src="../사진/기타/heart-01.png" alt="" class="heart_line">
-                                <img src=",./사진/기타/heart-02.png" alt="" class="heart_color">
+                                <img src="./img/ect/heart1.png" alt="" class="heart_line">
+                                <img src="./img/ect/heart2.png" alt="" class="heart_color">
                             </div>
                             <div>
-                                <img src="../사진/기타/cart (1).png" alt="장바구니" class="item_shop_basket">
+                                <img src="./img/ect/cart.png" alt="장바구니" class="item_shop_basket">
                             </div>
                         </div>
                     </li>`;

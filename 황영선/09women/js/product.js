@@ -9,7 +9,7 @@ console.log(M_LIST[cateNo][itemNo])
 
 let data = M_LIST[cateNo][itemNo];
 
-// $('.pro_main_img > img').attr('src', `./사진/best_plus/${data.src}`)
+// $('.pro_main_img > img').attr('src', `./img/best_plus/${data.src}`)
 // $('.p_title').text(data.item_title)
 // $('.p_s_price').text(data.s_price+"원")
  

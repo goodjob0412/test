@@ -219,8 +219,8 @@ function nav_pan_text(ttt) {
 }
 let pan_pic = `
                 <div class="nc_pic">
-                    <a href="product.html?cate_no=1&item_no=20"><img src="./사진/best_plus/2.gif" alt=""></a>
-                    <a href="product.html?cate_no=1&item_no=12"><img src="./사진/best_plus/14.gif" alt=""></a>
+                    <a href="product.html?cate_no=1&item_no=20"><img src="./img/best_plus/2.gif" alt=""></a>
+                    <a href="product.html?cate_no=1&item_no=12"><img src="./img/best_plus/14.gif" alt=""></a>
                 </div>`;
 $('.n_c_picture_boc').append(pan_pic)
 
