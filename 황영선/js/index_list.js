@@ -62,8 +62,8 @@ function load_item(data , el, start_index, end_index) {
 
                         <div class="item_user">
                             <div class="item_heart">
-                                <img src="../사진/기타/heart-01.png" alt="" class="heart_line">
-                                <img src=",./사진/기타/heart-02.png" alt="" class="heart_color">
+                                <img src="./사진/기타/heart-01.png" alt="" class="heart_line">
+                                <img src="./사진/기타/heart-02.png" alt="" class="heart_color">
                             </div>
                             <div>
                                 <img src="../사진/기타/cart (1).png" alt="장바구니" class="item_shop_basket">
