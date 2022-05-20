@@ -1,0 +1,485 @@
+body{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.contentarea {
+    width: 100%;
+    height: 100%;
+    max-width: 1416px;
+    /* background-color: teal; */
+    margin: 0 auto;
+}
+.contentarea2 {
+    max-width: 1416px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wrap {
+    padding-top: 105px;
+}
+/* 헤더 header */
+.header {
+    width: 100%;
+    /* height: 105px; */
+    height: 115px;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    /* overflow: hidden; */
+
+    box-sizing: border-box;
+}
+.head_content {
+    width: 100%;
+    padding: 0 100px;
+}
+.sc_small_up {
+    display: none;
+    width: 52%;
+}
+
+
+/* 탑메뉴 top_menu */
+.top_menu {
+    width: 100%;
+    padding: 10px 30px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.logo img {
+    margin-top: 10px;
+}
+.right_menu {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login {
+    width: 120px;
+}
+.kor {
+    position: relative;
+}
+.other_lang {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 10px;
+    transform: translateX(-17%);
+    position: absolute;
+    z-index: 9999999;
+
+    display: none;
+}
+.o_l_div:hover {
+    color: rgb(255, 60, 60);
+}
+
+
+
+/* 네비 nav */
+.nav {
+    width: 100%;
+    /* height: 40px; */
+    height: 50px;
+
+    padding: 10px 10px 0 0;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(186, 186, 186, 50%);
+    background-color: white;
+}
+.hamberger > img {
+    position: relative;
+    z-index: 9999999;
+}
+.hamberger {
+    display: none;
+    padding-top: 9px;
+}
+.ham_pan {
+    width: 66vw;
+    height: 100vh;
+    background-color: #f7f7f7;
+    box-shadow: 0,0,0,10px,10px;
+
+    position: absolute;
+    left: -120%;
+    top: 80px;
+    z-index: 999999;
+
+    overflow: scroll;
+
+    transition: all 0.5s;
+}
+.left {
+    left: 0;
+}
+.h_menubox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-top: 50px;
+}
+.h_menu {
+    line-height: 40px;
+    transition: all 1s;
+}
+.h_login {
+    width: 70%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    text-align: center;
+    margin: 30px auto;
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.sec_none,
+.thr_none {
+    display: none;
+}
+.fir_none {
+    display: block;
+}
+.h_m_smenu {
+    height: auto;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #dddddd;
+    /* transition: all 0.5s; */
+    display: none;
+}
+
+.nav_flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.nav_ul {
+    display: flex;
+    /* gap: 20px; */
+    /* padding: 8px 0; */
+
+    position: relative;
+}
+.nav_li {
+    padding: 8px 10px;
+}
+
+.nav_pan {
+    width: 100%;
+    height: 0;
+    background-color: #e7e7e7;;
+    position: absolute;
+    z-index: 9999999;
+
+    overflow: hidden;
+    transition:  all 0.5s;
+}
+.n_pan_active {
+    height: 400px;
+}
+.n_sub_pan {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    
+    top: 20px;
+    left: 20px;
+    position: relative;
+}
+.n_pan_text {
+    display: block;
+}
+.p_txt {
+    padding: 7px 0;
+    cursor: pointer;
+}
+.n_c_picture_boc {
+    position: absolute;
+    bottom: 30px;
+    right: 12%;
+}
+.nc_pic > img {
+    width: 200px;
+    height: 230px;
+    margin-left: 10px;
+}
+
+.search_form {
+    position: relative;
+    z-index: 99999;
+    padding-right: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0px #bbbbbb;
+}
+.search_form2 {
+    position: relative;
+    z-index: 99999;
+    padding-right: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0px #bbbbbb;
+}
+.search_bar {
+    height: 39px;
+    padding: 0 0 0 18px;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+.search_btn {
+    width: 20px;
+    height: 20px;
+
+    background: url(../사진/기타/search.png) no-repeat center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.search {
+    /* 내가 넣은거 */
+    position: relative;
+    width: 240px;
+}
+.around_pan {
+    /* display: none; */
+    /* background-color: #ededed; */
+    /* position: relative;
+    top: -26%;
+    left: -6%; */
+/* 
+    border-radius: 20px;
+    border: 15px solid #ededed;
+    box-shadow: 0 0 5px 0 #bfbfbf;
+    box-sizing: border-box;
+    display: none; */
+
+/* //////////////// */
+/* 내가 넣은거 */
+    width: 100%;
+    background-color: #ededed;
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 999999;
+
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 #bfbfbf;
+    padding: 15px;
+
+    display: none;
+/* //////////////// */
+
+}
+.v-align {
+    padding-top: 10px;
+}
+.a_pan_list {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.pan_list_title {
+    font-weight: 500;
+    margin: 10px 0 0 5px;
+    display: inline-block;
+}
+.pan_list_increase,
+.pan_list_ul {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.around_a {
+    display: flex;
+    justify-content: space-between;
+}
+.around_item_no {
+    margin-right: 10px;
+}
+.around_good {
+    color: rgb(255, 70, 70);
+}
+
+
+/* 푸터 footer */
+
+.footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.footer_top {
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+}
+.foo_top_ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #9b9b9b;
+}
+.foo_top_li {
+    line-height: 30px;
+}
+
+
+.foo_main_ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.centet_box_title {
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+    display: block;
+    margin-bottom:15px;
+    margin-top: 25px;
+}
+.center_box_mid_title {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+.center_box_content {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+.fm_service_btn,
+.fm_centet_btn {
+    margin: 15px 0;
+    padding: 10px 8px;
+    border: 1px solid #dbdbdb;
+    display: inline-block;
+    color: #9b9b9b;
+}
+.center_box_mid_title2 {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.fm_content {
+    display: inline-block;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.fm_bank_number,
+.fm_bank {
+    display: inline-block;
+    margin-left: 8px;
+    color: gray;
+    font-size: 14px;
+}
+.fm_bank_name {
+    margin: 15px 0 0 10px;
+    display: inline-block;
+    color: gray;
+    font-size: 14px;
+}
+
+/* 통합 버튼 integration_btn */
+.integration_btn {
+    position: fixed;
+    z-index: 999999999;
+    bottom: 50px;
+    right: 30px;
+    transition:  all 0.3s;
+    width: 50px;
+    height: 50px;
+}
+.integration_btn > div {
+    transition:  all 0.3s;
+}
+.plus_btn {
+    width: 50px;
+    height: 50px;
+    /* background-color: #9b9b9b; */
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0 0 5px 0 gray;
+    border-radius: 50%;
+    transform: rotate(-180deg) !important;
+}
+.plus_btn:hover {
+    transform: rotate(0) !important;
+}
+.x_btn > img,
+.top_btn > img,
+.down_btn > img,
+.plus_btn > img {
+    width: 50px;
+    height: 50px;
+}
+.top_btn,
+.down_btn {
+    box-shadow: 0 0 5px 0 gray;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+}
+.x_btn,
+.line_btn,
+.kakao_btn,
+.top_btn,
+.down_btn {
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+}
