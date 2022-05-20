@@ -224,7 +224,7 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
     },
-    loop: false,
+    loop: true,
 //   autoplay: true,
 //   autoplay: {
 //     delay: 500,
