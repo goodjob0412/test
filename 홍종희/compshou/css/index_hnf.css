@@ -1,0 +1,351 @@
+.topbanner{
+    width: 100%;
+    height: 30px;
+
+    background: rgb(59, 59, 59);
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    position: relative;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999999;
+}
+
+.top_des{
+    /*color: white;*/
+    width: 100%;
+    font-size: 13px;
+    font-weight: 200;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.top_des > span{
+    font-weight: 600;
+    font-size: 13px;
+    
+}
+
+.top_banner_space{
+    margin-left: 10px;
+}
+
+.topbanner_logo{
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+/* ----------------------------------- */
+
+.header{margin-top: 40px;}
+
+.help_po{position: relative;}
+
+.header_active{
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+
+.up_header{
+    width: 100%;
+    /*height: 100px;*/
+    /*position: relative;*/
+    border-bottom: rgb(223, 223, 223) solid 1px;
+}
+
+.up_header > .contents_area{
+    height: 100px;
+}
+
+.logo{
+    width: 250px;
+    height: 40px;
+    background: url(../img/common/logo.png)no-repeat center/cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-indent: -99999px;
+}
+
+.logo a{
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+.info_navi{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.info_navi li{
+    display: inline-block;
+    padding: 0 5px;
+    color: rgb(10, 10, 10);
+    font-size: 10px;
+    font-weight:700;
+    position: relative;
+    cursor: pointer;
+}
+
+/*.info_navi  li::after{
+    width: 2px;
+    height: 5px;
+
+    background: rgb(0, 0, 0);
+    margin: 0 2px;
+}*/
+
+.icon_join{
+    position: absolute;
+    top: 120%;
+    left: 5%;
+
+    width: 50px;
+    height: 20px;
+
+    background: url(../img/common/icon_talk.png)no-repeat center/cover;
+    text-align: center;
+    line-height: 25px;
+}
+
+.icon_join span{
+    width: 100%;
+    /*height: 20px;*/
+    color: white;
+    font-size: 8px;
+
+}
+
+/*.icon_page{
+    width: 13px;
+    height: 13px;
+
+    position: absolute;
+    top: -8px;
+    left: 92%;
+    background: url(../img/common/icon_heart.png)no-repeat center/cover;
+}*/
+
+.down_header{
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-bottom: rgb(223, 223, 223) solid 1px;
+    z-index: 999999;
+    /* position: relative; */
+}
+
+.gnb{
+    width: 100%;
+    height: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    z-index: 9999;
+    border-top: 1px solid rgb(223, 223, 223);
+    box-sizing: border-box;
+    transition: all 0.5s;
+    /* box-shadow: 0 5px 5px 0 rgb(199, 199, 199); */
+}
+
+.gnb_active{
+    height: 400px;
+}
+.menu_pan{
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    /* display: none; */
+    margin: 0 auto;
+    /*background: blueviolet;*/
+}
+
+.what_u_st{
+    background: url(../img/common/what_u_style.png) no-repeat center/cover;
+    width: 200px;
+    height: 150px;
+    /* float: left; */
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gnb .contents_area{
+    height: 100%;
+    background: #ffffff;
+}
+
+.gnb_ul{
+    width:calc(100% - 300px);
+    display: flex;
+    /* float: right;     */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gnb_ul li{
+    width: calc((100% - ( 30px * 5))/6);
+    margin-right: 30px;
+    /* height: 300px; */
+    /* background: coral; */
+}
+
+.gnb_ul li img{
+    width: 100%;
+}
+
+.gnb_des{
+    /* display: inline-block; */
+    text-align: center;
+    margin-top:30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+/* ----------------------------------- */
+
+.navi{
+    text-align: center;
+    height: 100%;    
+}
+
+.navi li{
+    display: inline-block;  
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.navi li>a{
+    /* display:block; */
+    position: relative;
+ 
+}
+
+.navi_line{
+    width: 0%;
+    height: 0.5px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+}
+
+
+
+
+/* -------------헤더 부분-------------------------- */
+
+
+.footer_font{
+    font-size: 10px;
+    font-weight: 600px;
+    margin: 13px 0;
+}
+
+
+.footer_title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+
+.footer{
+    width:100%;
+    height: 400px;
+    background: rgb(58, 58, 58);
+    /*position: fixed;
+    bottom: 0;
+    left: 0;*/
+    /*padding: 40px 0px;*/
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.footer_ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_ul li{
+   flex:  0 0 calc((100% - (30px * 3))/4);
+   color: whitesmoke;
+   margin-right: 30px;
+}
+
+.companny_inquire{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.companny_caution{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.qna_link{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 30px 0;
+    background: rgb(188, 165, 143);
+}
+
+.delivery_tel{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* //////////////////////////////// */
+
+.personal_info{
+    font-weight: 800;
+    font-size: 15px;
+}
+
+/*.ceo_name::before{
+    width: 2px;
+    height: 5px;
+    background: whitesmoke;
+}
+.ceo_name::after{
+    width: 2px;
+    height: 5px;
+    background: whitesmoke;
+}*/
+
+.company_detail{
+    margin-top: 30px;
+}
+
+.ceo_name span{
+    padding: 0 5px;
+}
+
+.footer_padding{
+    margin-left: 5px;
+}
+
+
+

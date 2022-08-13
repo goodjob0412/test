@@ -1,0 +1,781 @@
+.mainbanner{
+    width: 100%;
+    height:150vw;
+    max-height: 100vh;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.banner1{background:url(../img/index01/mobile_mainbanner1.png)no-repeat center/cover;}
+.banner2{background:url(../img/index01/mobile_mainbanner2.png)no-repeat center/cover;}
+.banner3{background:url(../img/index01/mobile_mainbanner3.png)no-repeat center/cover;}
+
+
+.mb_direction{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.mb_directionL{
+    background: url(../img/common/icon_mobiledirectionL.png)no-repeat center/cover;
+    left: 10px;
+}
+.mb_directionR{
+    background: url(../img/common/icon_mobiledirectionR.png)no-repeat center/cover;
+    right: 10px;
+}
+
+/* ////////////////////////////////////////////////////////////
+//////////////////////이벤트//////////////////////////////// */
+
+.event_sec{
+    width: 100%;
+    padding-bottom:90% ;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.event_title{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(44, 44, 44);
+}
+
+.event_inner{
+    width: 100%;
+    /*height: 250px;*/
+    padding-bottom:80% ;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+    /* max-height: 280px; */
+    
+}
+.event_long_case{
+    width: 100%;
+    /* height: 428px; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: absolute;
+    left: 0;
+    top: -19px;
+}
+.event{
+    width: 100%;
+    /* height: 200px; */
+    max-height: 344px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .event1{background: url(../img/index01/mobile_event01.png)no-repeat center/contain;}
+.event2{background: url(../img/index01/mobile_event01.png)no-repeat center/contain;}
+.event3{background: url(../img/index01/mobile_event01.png)no-repeat center/contain;}
+.event4{background: url(../img/index01/mobile_event01.png)no-repeat center/contain;} */
+
+.event img{
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.event_blacklayer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.event_directioncase{
+ 
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.event_direction{
+    display: inline-block;
+    width: calc((100% - (10px *1))/2);
+    height: 25px;
+    text-align: center;
+    /*background: rgb(75, 75, 75);*/
+    border-radius:5px ;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.eve_dire_up{
+    width: 30px;
+    height: 10px;
+    background:  url(../img/common/bold_up.png)no-repeat center/cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.eve_dire_down{
+    width: 30px;
+    height: 10px;
+    background: url(../img/common/bold_down.png)no-repeat center/cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* ////////////////////////////////////////////////////////////
+/////////////////////////////베스트//////////////////// */
+
+.best_sec{
+    margin-top: 50px;
+}
+
+.best_title{
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 900;
+    color: rgb(44, 44, 44);
+}
+
+.best_cate{
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    display: flex;
+    justify-content: end;
+}
+
+.best_cate_li{
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+}
+
+.best_item{
+    width: 100%;
+    /* height: 269vw; */
+    /*height:1100px;*/
+    margin-top: 20px;
+    /*padding: 0 5px;*/
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+/* //////////////////////////////////// */
+
+
+.best_ul{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    overflow: hidden;
+    /*margin-top: 20px;*/
+    position: absolute;
+    /*overflow: hidden;*/
+   
+}
+
+.loafer_sec{
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+
+.boots_sec{
+    width: 100%;
+    left: 100%;
+    top: 0;
+}
+
+.loafer_ul_li,
+.boots_ul_li{
+    width: calc((100% - (5px *2))/3);
+    margin-right: 5px;
+    margin-bottom: 26px;
+    /* float: left; */
+}
+
+.loafer_ul_li:nth-child(3n),
+.boots_ul_li:nth-child(3n){
+    margin-right: 0;
+}
+
+.loafer_pro_img,
+.boots_pro_img{
+    position: relative;
+}
+
+.loafer_pro_img_s,
+.boots_pro_img_s{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+}
+
+
+.loafer_pro_img img,
+.boots_pro_img img{
+    width: 100%;
+}
+
+
+
+.loafer_pro_name,
+.boots_pro_name{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: rgb(46, 46, 46);
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.loafer_pro_color,
+.boots_pro_color{
+    overflow: hidden;
+    padding-left: 2px;
+    box-sizing: border-box;
+}
+
+.pro_color{
+    width: 10px;
+    height: 5px;
+    /*border-radius: 50%;*/
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    float: left;
+    border: 1px solid white;
+    /*margin: 10px 0;*/
+    margin-top: 1px;
+}
+
+.pro_color:nth-child(2){
+    margin: 1px 5px;
+}
+/* /////////////////////////색/////////////////// */
+
+.pink{background: #fcbeb3;}
+.black{background: #000000;}
+.white{background: #ffffff;}
+.brown{background: #77451c;}
+.red{background: #f83422;}
+.ivory{background: #fff1dc;}
+.dark_brown{background: #251709;}
+
+
+/* /////////////////////////색/////////////////// */
+
+.loafer_price,
+.boots_price{
+    font-size: 12px;
+    font-weight: 900;
+     margin: 5px 0;
+}
+
+.more_pos{
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+
+.event_btn_more{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(214, 214, 214);
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+
+.event_btn_hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    background: rgb(58, 58, 58);
+}
+
+.event_btn_more span{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(156, 156, 156);
+    /* color: rgb(255, 255, 255); */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* //////////////////추천///////////////////////////////// */
+
+.recomend_sec{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-top: 150px;
+}
+.recomend_outer{
+    width: 100%;
+    height: 100%;
+    background: url(../img/index01/recomendback.jpg)no-repeat center/cover;
+    
+}
+
+
+
+
+.recomend_des{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    opacity: 0;
+    z-index: 99;
+}
+
+.recomend_tilte{
+    font-size:20px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0  2px rgb(109, 106, 101);
+}
+.recomend_subtilte{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    text-shadow: 0 0  2px rgb(109, 106, 101);
+}
+
+.recomend_subtilte span{
+    float: right;
+}
+
+.recomend_img_area{
+    width: 600px;
+    height: 290px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    transform: translateX(-100%);
+    transition: all 0.8s;
+
+    background: chocolate;
+    overflow: hidden;
+    opacity:0;
+    overflow-x: scroll;
+}
+
+
+.recomend_img_hidden{
+    /* width: 630px; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: chocolate;
+    /*overflow: hidden;
+    left: 0;
+    top: 0;*/
+}
+
+.recomend_imgcase{
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top:0
+}
+
+.recomend_imgcase img{
+    width: 100%;
+}
+
+
+
+
+/* /////////////////타임특가////////////////////////////////// */
+
+
+.specialprice_sec{
+    width: 100%;
+    padding:0  20px;
+    box-sizing: border-box;
+
+    margin-top:80px;
+}
+
+
+.spe_p_thum{
+    width: 100%;
+    height: 300px;
+
+    background: url(../img/index01/specialprice01.png)no-repeat center /cover;
+    margin-top: 30px;
+    position: relative;
+}
+
+.spe_thum_exp{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.spe_thum_exp p:nth-child(1){
+    font-size: 23px;
+    font-weight: 800;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.spe_thum_exp p:nth-child(2){
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.spe_thum_exp span{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 11, 11);
+    text-shadow: 0 0 2px rgb(146, 0, 0);
+    border-bottom: 2px solid rgb(235, 3, 3) ;
+    padding-bottom: 3px;
+}
+
+
+.time_layer{
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.abt_time{
+    width: 40px;
+    float: left;
+    text-align: center;
+}
+
+.time_box{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: rgb(88, 88, 88);
+    
+}
+
+.date_abt{
+    /*display: none;*/
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.colon{
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    float: left;
+    line-height:50px ;
+}
+
+.time_item{
+    margin-top: 20px;
+    height: 446px;
+    position: relative;
+    overflow: hidden;
+}
+
+.time_ul{
+    width: 100%;
+    /*height: 60%;*/
+    /*height: 265px;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.time_ul li{
+    width: 100%;
+    height: 140px;
+    border-top: 1px rgb(192, 192, 192) solid;
+    border-bottom: 1px rgb(192, 192, 192) solid;
+    margin: 5px;
+    overflow: hidden;
+
+}
+
+.time_img{
+    width: 160px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.time_img img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:-60px;
+}
+
+.time_des{
+    float: left;
+    margin-left:10px;
+    margin-top:20px ;
+}
+
+
+.time_des p:nth-child(1){
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.time_des p:nth-child(2){
+    margin: 5px 0 10px 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.o_price{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.off_price{
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: tomato;
+    margin-top: 5px;
+}
+
+.special_directioncase{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.special_direction{
+    width: calc((100% - (10px *1))/2);
+    height: 25px;
+    text-align: center;
+    border-radius:5px ;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.sp_dire_up{
+    width: 30px;
+    height: 10px;
+    background:  url(../img/common/bold_up.png)no-repeat center/cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.sp_dire_down{
+    width: 30px;
+    height: 10px;
+    background: url(../img/common/bold_down.png)no-repeat center/cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*////////////////////////////////////////////////////////////
+////////////////////md 픽/////////////////////////////*/
+
+.md_sec{
+    margin-top: 77px;
+    width: 100%;
+    /* height: 300px; */
+    background: rgb(170, 161, 132);
+    /*padding: 20px 0;*/
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.md_title{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+    /*margin-top: 20px;*/
+}
+
+.md_ul{
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.md_ul li{
+    /*width:calc((100vW - (px * 2))/3);*/
+    flex: 0 0 50vw;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+/*.md_ul li:nth-child(9n){
+    margin-right: 0;
+}*/
+.md_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.md_ul li img{
+    position: absolute;
+    /*top: -50px;*/
+    width: 100%;
+    transform: translateY(-18%);
+}
+
+.md_btn{
+    width: 40px;
+    height: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+}
+.md_L{
+        background: url(../img/common/bold_down.png)no-repeat center/cover;
+        left: 0; 
+    }
+.md_R{
+        background: url(../img/common/bold_up.png)no-repeat center/cover;
+        right: 0; 
+    }
+
+
+/* ////////////////////////////////////////// */
+@media screen and (max-width:1000px){
+    .loafer_pro_name, .boots_pro_name {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .recomend_img_area {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:610px){
+    .recomend_img_area {
+        width: 200px;
+    }
+}
+@media screen and (max-width:485px){
+    .loafer_pro_name, .boots_pro_name {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:413px){
+    
+    .loafer_pro_name,
+    .boots_pro_name{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:366px){
+    
+    .time_des p:nth-child(1){
+        font-size: 11.5px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .time_des p:nth-child(2){
+        font-size: 7px;
+    }
+    
+    .o_price{
+        font-size: 9px;
+    }
+    
+    .off_price{
+        font-size: 9px;
+    }
+    .time_img {
+        width: 148px;
+    }
+
+    /*.best_item{
+        height: 295vw;     
+    }*/
+}
+
+
+
+

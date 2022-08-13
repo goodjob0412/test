@@ -1,0 +1,475 @@
+.header{
+    background: rgb(255, 255, 255);
+    border-bottom:1px solid rgba(226, 226, 226, 0.8) ;
+}
+.middle_gnb{
+    width: 100%;
+    height: 40px;
+    background: rgb(71, 71, 71);
+    /*margin-top: 60px;*/
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    position: fixed;
+    left: 0;
+    top: 60px;
+    opacity: 1;
+}
+
+
+/*///////////////////////////////////////////////////////////*/
+.sec{
+    margin-top: 100px;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+}
+
+.item_big{
+    width: 100%;
+    /*float: left;*/
+}
+.item_big img{
+    width:100%;
+}
+
+.item_info{
+    /*width: 100%;*/
+    /*float: right;*/
+    font-size: 13px;
+    padding: 15px 10px 10px 10px;
+}
+
+.item_main{
+    /*border-top:3px solid rgb(105, 105, 105) ;*/
+    border-bottom:rgb(77, 77, 77) solid 1px;
+    padding-bottom: 10px ;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/*.item_w{
+    width: 30%;
+    color: rgb(160, 160, 160);
+}*/
+
+.item_name{
+    /*margin: 10px 0 ;*/
+    font-size: 20px;
+    border-bottom:3px solid rgb(105, 105, 105) ;
+    padding-bottom: 15px;
+    /*color: rgb(51, 51, 51);*/
+    font-weight: 900;
+}
+
+.o_price_size{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.s_price_size{
+    margin: 20px 0;
+    font-weight: 700;
+    color: rgb(228, 49, 49);
+}
+
+.delivery_f_si{
+    margin: 20px 0;
+}
+.item_L{
+    width: 40%;
+    float: left;
+    /*background: lightgoldenrodyellow;*/
+}
+
+.s_money_name{
+    margin-top: 40px;
+    font-weight: 700;
+}
+.delivery_fee_name{
+    margin-top: 25px;
+    font-weight: 700;
+}
+.item_R{
+    width: 60%;
+    float: left;
+    /*background: rgb(89, 219, 122);*/
+}
+
+.delivery_fee_select{
+    display: block;
+    height: 25px;
+    width: 100%;
+    color: black;
+    border: rgb(155, 155, 155) solid 1px;
+
+}
+
+.delivery_fee_p span{
+    font-size: 8px;
+    padding-left:2px ;
+    margin-top:8px ;
+    box-sizing: border-box;
+}
+
+
+/* ///////////////////////////////////// */
+
+
+.item_clac{
+    overflow: hidden;
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+    /*padding: 10px 0;*/
+    box-sizing: border-box;
+}
+.item_color{
+    margin: 10px 0;
+    overflow: hidden;
+}
+.item_color_name{
+    width: 20%;
+    float: left;
+    font-weight: 700;
+    margin-top: 5px;
+    
+}
+
+
+.item_colors{
+    width: 80%;
+    /*overflow: hidden;*/
+    float: left;
+}
+.item_colors span{
+    font-size: 8px;
+}
+
+.item_co{
+    width: 20px;
+    height: 20px;
+    border:rgb(141, 141, 141) 1px solid;
+    /*box-shadow: 0 0 0 1px rgb(110, 110, 110);*/
+    float: left;
+    background: white;
+    position: relative;
+  
+}
+.item_co:nth-child(2){
+    margin:0 5px;
+}
+.item_pallette_case{
+    display: block;
+    overflow: hidden;
+}
+
+.item_palette{
+    width:80%;
+    height:80%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 2px 0 gray;
+}
+.black{background: black;}
+.gray{background: gray;}
+.white{background: white;}
+
+.nessesary{
+    font-size: 8px;
+    margin: 5px 0;
+}
+/* ---------------------------- */
+
+.item_total{
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgb(105, 105, 105);
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.item_detail{
+    overflow: hidden;
+}
+.item_detail_name{
+    width: 50%;
+    float: left;
+}
+.item_detail_name p:nth-child(1){
+    margin: 5px 0;
+}
+
+.item_detail_price{
+    width: 25%;
+    float: left;
+}
+
+.item_detail_count{
+    overflow: hidden;
+    padding: 2px;
+}
+
+.s_box{
+    width: 20px;
+    height: 20px;
+    /*box-shadow: 0 0 3px 0 rgb(155, 155, 155);*/
+    border: 1px solid  rgb(192, 192, 192);
+    float: left;
+    text-align: center;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+.item_chk_price{
+    float: right;
+    width: 25%;
+    overflow: hidden;
+}
+.item_close{
+    float: right;
+    width: 15px;
+    height: 15px;
+}
+
+.item_close img{
+    width: 100%;
+}
+
+.chk_price{
+    float: right;
+    line-height: 40px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* ------------------------------- */
+
+.item_to_price{
+    overflow: hidden;
+    /*padding: 10px 0;
+    box-sizing: border-box;*/
+    width: 100%;
+    margin:10px 0;
+}
+.item_price_outer{
+    overflow: hidden;
+}
+.item_price{
+    float: right;
+    padding: 10px 0;
+}
+
+.total_p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.item_btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*margin-top: 10px;*/
+}
+
+.item_buy{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.item_btn_common{
+    width: calc((100% - (10px * 1))/2);
+    height: 40px;
+    box-shadow: 0 0 2px 0 rgb(155, 155, 155);
+    text-align: center;
+    line-height: 40px;
+    background: white;
+
+}
+
+/* ----------------------------------- */
+
+/*.product_body{
+    margin-top: 50px;
+}*/
+
+.detail_product{
+    border-top: 1px solid gray;
+}
+.product_navi_title{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.product_navi_title li{
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+.product_detail_area img,
+.shopping_detail_area{
+    width: 100%;
+}
+
+
+/* --------------------------------------------- */
+
+.pos_productbox{
+    padding-top:120px ;
+}
+
+.move_btn {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /*margin-top: 80px;*/
+    border-bottom: rgb(223, 223, 223) solid 1px;
+    border-top:rgb(161, 161, 161) solid 2px;
+    /*border: rgb(223, 223, 223) solid 1px 0 1px 0;*/
+}
+
+.move_btn li{
+    /*display: inline-block;*/
+    position: relative;
+    padding: 10px 5px;
+    margin: 0 10px;
+    font-size: 12px;
+    /*border: 1px solid rgb(223, 223, 223);*/
+    box-sizing: border-box;
+    color: #727272;
+}
+
+.move_btn_active{
+    color: #505050;
+    font-weight: 800;
+}
+
+/* //////////////////////////////////////////// */
+
+.product_detail_img img,
+.product_review img,
+.product_qna img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.move_btn:nth-child(3){
+    margin-top: 50px;
+}
+.move_btn:nth-child(5){
+    margin-top: 100px;
+}
+.move_btn:nth-child(7){
+    margin-top: 100px;
+}
+
+.product_qna{
+    /*margin:50px;*/
+    position: relative;
+    height: 300px;
+}
+
+.qna_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 10px 10px 10px 0;*/
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin-top: 30px;
+}
+.qna_title span{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.qna_title div{
+    width: 60px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    background: rgb(65, 65, 65);
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.qna_mention{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: 700;
+}
+/* /////////////////////////////////// */
+
+    .loafer_pick_color,
+    .boots_pick_color{
+        overflow: hidden;
+        padding-left: 2px;
+        box-sizing: border-box;
+    }
+
+    .pro_color{
+        width:18px;
+        height:18px;
+        /*border-radius: 50%;*/
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+        float: left;
+        border: 1px solid white;
+        /*margin: 10px 0;*/
+        margin-top: 3px;
+    }
+
+    .pro_color:nth-child(2){
+        margin: 3px 5px;
+    }
+    /* /////////////////////////색/////////////////// */
+
+    .pink{background: #fcbeb3;}
+    .black{background: #000000;}
+    .white{background: #ffffff;}
+    .brown{background: #77451c;}
+    .red{background: #f83422;}
+    .ivory{background: #fff1dc;}
+    .dark_brown{background: #251709;}
+
+/*////////////////////옵션창////////////////////////////*/
+
+    .from_opt_index{
+        display: none;
+    }
+
+
+
+    @media screen and (max-width:350px){
+        .item_detail_name{
+            width: 40%;
+            float: left;
+        }
+                
+        .item_detail_price{
+            width: 30%;
+            float: left;
+        }
+
+        .item_chk_price{
+            float: right;
+            width: 30%;
+            overflow: hidden;
+        }
+    }
